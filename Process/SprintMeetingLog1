@@ -1,10 +1,18 @@
 The Burzly Food Ordering System project first sprint start on 5th of December 2016. 
-Scrum master introduce the project to the scrum developers about the scope of the system. 
+The scrum master is Wen Shen and the scrum developers are Yin Yin, Sen Hieng, Ming Han and Tau Leong.
+Scrum master introduce the project to the scrum developers about the scope of the system.
 There are two iterations for this project.
 Each iteration will be one week.
 The food ordering system is for the Burzly Restaurant staff to manage their restaurant more easily.
 The system must allow the Restaurant staff to do basic restaurant management task such as manage stock, order food, record suppliers
 and manage staff.
-Every member is allowed to add user story to the project.
 Scrum master will assign the user story to every scrum developer. 
 There will priority for every user story, the higher priority task must be develop first.
+Every member is allowed to add user story to the project.
+Yin Yin suggested to allow staffs to register an account to use the system.
+Wen Shen support Yin Yin suggestion which staffs must have an account to use the system.
+Sen Hieng suggested add new stock which allow staffs to manage the restaurant's stocks.
+Tau Leong suggested register supplier which allow staffs to manage the stock more efficiency.
+Ming Han suggested a food ordering page to allow staffs make food order.
+Wen Shen agree with all of the suggestion and also suggested search information which allow staffs or restaurant manager to search the 
+specific staff details, search for specific stock information or search for specific supplier details.
