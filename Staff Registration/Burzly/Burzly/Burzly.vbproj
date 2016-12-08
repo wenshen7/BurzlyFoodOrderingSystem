@@ -109,7 +109,9 @@
     <Compile Include="frmEmployeeCRUD.Designer.vb">
       <DependentUpon>frmEmployeeCRUD.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmEmployeeCRUD.vb" />
+    <Compile Include="frmEmployeeCRUD.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

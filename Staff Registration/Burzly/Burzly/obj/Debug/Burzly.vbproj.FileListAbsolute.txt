@@ -215,3 +215,10 @@ D:\download\Staff Registration\Burzly\Burzly\bin\Debug\Burzly.exe.config
 D:\download\Staff Registration\Burzly\Burzly\obj\Debug\Burzly.exe
 D:\download\Staff Registration\Burzly\Burzly\obj\Debug\Burzly.xml
 D:\download\Staff Registration\Burzly\Burzly\obj\Debug\Burzly.pdb
+D:\download\Staff Registration\Burzly\Burzly\bin\Debug\Burzly.exe
+D:\download\Staff Registration\Burzly\Burzly\bin\Debug\Burzly.pdb
+D:\download\Staff Registration\Burzly\Burzly\bin\Debug\Burzly.xml
+D:\download\Staff Registration\Burzly\Burzly\obj\Debug\Burzly.vbprojResolveAssemblyReference.cache
+D:\download\Staff Registration\Burzly\Burzly\obj\Debug\Burzly.frmEmployeeCRUD.resources
+D:\download\Staff Registration\Burzly\Burzly\obj\Debug\Burzly.Resources.resources
+D:\download\Staff Registration\Burzly\Burzly\obj\Debug\Burzly.vbproj.GenerateResource.Cache
