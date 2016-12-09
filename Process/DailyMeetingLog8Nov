@@ -1,0 +1,17 @@
+Yesterday Ming Han was designed a requirement of the page needed and a quick design for the order page.
+Today he going to code the order page and design the interface and update the database.
+He face some coding errors are occured make the page could not add the testable data into the system.
+Yesterday Yin Yin was started to design the user interface for the staff information page but the staff registration part was rejected by 
+client.
+Today she will do enhancment for the staff registration page and continue the user interface for the staff information.
+Yin Yin face the error for store image into database but she has solved it with find solution from online source.
+Yesterday Tau Leong was start to design the supplier information page but no finish yet.
+Today he will continue do the design the supplier information page and start to code it.
+Yesterday Sen Hieng was start to design the stock information page but no finish yet.
+Today he will continue do the design the supplier information page and start to code it.
+Tau Leong has asked what information is necessary to display for the supplier information page.
+Yin Yin suggested to display supplier's contact number and email.
+Wen Shen suggested to display supply items.
+Sen Hieng suggested to display company name.
+Ming Han suggested that allow staff to use supplier id and name to search for specfic supplier.
+All of the member agree with all the suggestions, Tau Leong will implement all the suggestion into the supplier information page.
