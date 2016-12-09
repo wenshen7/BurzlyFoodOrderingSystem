@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BurzlyDB" Class="BurzlyDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\BurzlyDB.mdf;Integrated Security=True" SettingsObjectName="Burzly.My.MySettings" SettingsPropertyName="BurzlyDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Product" Member="Products">
+    <Type Name="Product">
+      <Column Name="productID" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="productName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="productDescrip" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="productStatus" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="productDealerPrice" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="productBeforeGST" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="productAfterGST" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="productImageName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Order_Product" Member="Order" ThisKey="productID" OtherKey="productID" Type="Order" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Payment" Member="Payments">
+    <Type Name="Payment">
+      <Column Name="paymentId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="paymentDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="paymentTime" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="paymentTotalPrice" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="paymentMember" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="paymentDiscount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="paymentGrandTotal" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="paymentPayBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="paymentTableNo" Type="System.String" DbType="VarChar(7)" CanBeNull="true" />
+      <Association Name="Payment_Order" Member="Orders" ThisKey="paymentId" OtherKey="ordID" Type="Order" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Stock" Member="Stocks">
+    <Type Name="Stock">
+      <Column Name="stkID" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="stkType" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="stkName" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="stkDescription" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="stkBrand" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="stkBeforeGst" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="stkAfterGst" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="stkStatus" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="stkQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="stkImageName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="supID" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="Supplier_Stock" Member="Supplier" ThisKey="supID" OtherKey="supId" Type="Supplier" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Supplier" Member="Suppliers">
+    <Type Name="Supplier">
+      <Column Name="supId" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="supName" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="supCompany" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="supDescription" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="supAddress" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="supState" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="supPostcode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="supCountry" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="supPhone1" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="supPhone2" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="supFax1" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="supFax2" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="supEmail" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="supStatus" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="supImageName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Supplier_Stock" Member="Stocks" ThisKey="supId" OtherKey="supID" Type="Stock" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Order]" Member="Orders">
+    <Type Name="Order">
+      <Column Name="ordID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ordQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="productID" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tableNo" Type="System.String" DbType="VarChar(7)" CanBeNull="true" />
+      <Association Name="Order_Product" Member="Products" ThisKey="productID" OtherKey="productID" Type="Product" />
+      <Association Name="Payment_Order" Member="Payment" ThisKey="ordID" OtherKey="paymentId" Type="Payment" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Reservation" Member="Reservations">
+    <Type Name="Reservation">
+      <Column Name="reserveId" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="reserveName" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="reserveContact" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="reserveDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="reserveTime" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="reservePax" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="reserveTable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="reserveStatus" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employee" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="empId" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="empName" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="empIC" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="empPassport" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="empDOB" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="empGender" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="empAddress" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="empState" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="empPostcode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="empCountry" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="empPhone1" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="empPhone2" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="empEmail" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="empPassword" Type="System.String" DbType="VarChar(48) NOT NULL" CanBeNull="false" />
+      <Column Name="empPosition" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="empSalary" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="empStatus" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="empImageName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
