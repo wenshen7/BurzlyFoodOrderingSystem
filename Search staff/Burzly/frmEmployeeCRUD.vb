@@ -293,6 +293,58 @@ Public Class frmEmployeeCRUD
 
     Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
 
+        ' Dim searchEmp As String
+        Try
+            Dim searchEmp = (From emp In db.Employees
+                                Where emp.empId = txtEmpId.Text).ToList()(0)
+        Catch
+            MessageBox.Show("Invalid Id", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            txtEmpId.Text = "M0001"
+            txtEmpName.Clear()
+            mskEmpIC.Clear()
+            txtEmpPassp.Clear()
+            txtEmpGender.Clear()
+            txtEmpAddr.Clear()
+            mskEmpPostcode.Clear()
+            txtCountry.Clear()
+            txtPhone1.Clear()
+            txtPhone2.Clear()
+            mskEmail.Clear()
+            txtPassw.Clear()
+            txtEmpPosition.Clear()
+            txtEmpSalary.Clear()
+            txtEmpState.Clear()
+            txtEmpStatus.Clear()
+        End Try
+
+
+        Try
+            Dim searchEmp = (From emp In db.Employees
+                                Where emp.empId = txtEmpId.Text).ToList()(0)
+            txtEmpName.Text = searchEmp.empName
+            mskEmpIC.Text = searchEmp.empIC
+            txtEmpPassp.Text = searchEmp.empPassport
+            EmpDOBDateTimePicker.Text = CStr(searchEmp.empDOB)
+            txtEmpGender.Text = searchEmp.empGender
+            txtEmpAddr.Text = searchEmp.empAddress
+            mskEmpPostcode.Text = CStr(searchEmp.empPostcode)
+            txtCountry.Text = searchEmp.empCountry
+            txtPhone1.Text = searchEmp.empPhone1
+            txtPhone2.Text = searchEmp.empPhone2
+            mskEmail.Text = searchEmp.empEmail
+            txtPassw.Text = searchEmp.empPassword
+            txtEmpPosition.Text = searchEmp.empPosition
+            txtEmpSalary.Text = CStr(searchEmp.empSalary)
+            txtEmpState.Text = searchEmp.empState
+
+            'load image
+            picEmp.Load(Application.StartupPath & "\images\Employee\" & searchEmp.empImageName)
+            'Console.WriteLine(Application.StartupPath & "\images\Employee\" & searchEmp.empImageName)
+        Catch
+            picEmp.Load(Application.StartupPath & "\images\Employee\No_Image.jpg")
+        End Try
+        db.SubmitChanges()
+        db = New BurzlyDataContext()
     End Sub
 
 
