@@ -265,7 +265,23 @@ Public Class frmEmployeeCRUD
 
 
 
+    Private Sub btnBrowsePic_Click(sender As Object, e As EventArgs) Handles btnBrowsePic.Click
 
+        openFileDialog1.Filter = "Only Image|*.jpg;*.gif"
+
+        openFileDialog1.Title = "Select a file"
+        'Dim s As String = Application.ExecutablePath & "\images\"
+        openFileDialog1.InitialDirectory = s
+        openFileDialog1.ShowDialog()
+
+        If openFileDialog1.CheckFileExists = True Then
+            picEmp.ImageLocation = openFileDialog1.FileName.ToString
+            picEmp.SizeMode = PictureBoxSizeMode.StretchImage
+        Else
+            MsgBox("Please Select an Image")
+        End If
+
+    End Sub
 
 
     Private Sub PublisherBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
