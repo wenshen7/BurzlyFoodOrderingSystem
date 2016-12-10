@@ -345,6 +345,8 @@ Public Class frmEmployeeCRUD
         End Try
         db.SubmitChanges()
         db = New BurzlyDataContext()
+        dgvEmp.DataSource = db.Employees
+
     End Sub
 
 

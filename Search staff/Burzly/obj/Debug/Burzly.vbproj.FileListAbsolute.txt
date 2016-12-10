@@ -222,3 +222,7 @@ D:\download\Staff Registration\Burzly\Burzly\obj\Debug\Burzly.vbprojResolveAssem
 D:\download\Staff Registration\Burzly\Burzly\obj\Debug\Burzly.frmEmployeeCRUD.resources
 D:\download\Staff Registration\Burzly\Burzly\obj\Debug\Burzly.Resources.resources
 D:\download\Staff Registration\Burzly\Burzly\obj\Debug\Burzly.vbproj.GenerateResource.Cache
+D:\download\Search staff\Burzly\bin\Debug\Burzly.exe.config
+D:\download\Search staff\Burzly\obj\Debug\Burzly.exe
+D:\download\Search staff\Burzly\obj\Debug\Burzly.xml
+D:\download\Search staff\Burzly\obj\Debug\Burzly.pdb

@@ -71,6 +71,29 @@ Partial Class frmEmployeeCRUD
         Me.txtEmpImageName = New System.Windows.Forms.TextBox()
         Me.err = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.btnSearch = New System.Windows.Forms.Button()
+        Me.dgvEmp = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnLast = New System.Windows.Forms.Button()
+        Me.btnNext = New System.Windows.Forms.Button()
+        Me.btnPrevious = New System.Windows.Forms.Button()
+        Me.btnFirst = New System.Windows.Forms.Button()
         EmpIdLabel = New System.Windows.Forms.Label()
         EmpNameLabel = New System.Windows.Forms.Label()
         EmpICLabel = New System.Windows.Forms.Label()
@@ -93,6 +116,7 @@ Partial Class frmEmployeeCRUD
         CType(Me.BurzlyDBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmployeeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.err, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvEmp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'EmpIdLabel
@@ -573,12 +597,183 @@ Partial Class frmEmployeeCRUD
         Me.btnSearch.Text = "&Search"
         Me.btnSearch.UseVisualStyleBackColor = True
         '
+        'dgvEmp
+        '
+        Me.dgvEmp.AutoGenerateColumns = False
+        Me.dgvEmp.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.dgvEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvEmp.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18})
+        Me.dgvEmp.DataSource = Me.EmployeeBindingSource
+        Me.dgvEmp.GridColor = System.Drawing.SystemColors.Highlight
+        Me.dgvEmp.Location = New System.Drawing.Point(731, 11)
+        Me.dgvEmp.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvEmp.Name = "dgvEmp"
+        Me.dgvEmp.Size = New System.Drawing.Size(618, 288)
+        Me.dgvEmp.TabIndex = 90
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "empId"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Employee ID"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "empName"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Employee Name"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "empIC"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Employee IC"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "empPassport"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Employee Passport"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "empDOB"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Employee DOB"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "empGender"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Employee Gender"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "empAddress"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Employee Address"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "empState"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Employee State"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "empPostcode"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "Employee Postcode"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        '
+        'DataGridViewTextBoxColumn10
+        '
+        Me.DataGridViewTextBoxColumn10.DataPropertyName = "empCountry"
+        Me.DataGridViewTextBoxColumn10.HeaderText = "Employee Country"
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        '
+        'DataGridViewTextBoxColumn11
+        '
+        Me.DataGridViewTextBoxColumn11.DataPropertyName = "empPhone1"
+        Me.DataGridViewTextBoxColumn11.HeaderText = "Employee Phone1"
+        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
+        '
+        'DataGridViewTextBoxColumn12
+        '
+        Me.DataGridViewTextBoxColumn12.DataPropertyName = "empPhone2"
+        Me.DataGridViewTextBoxColumn12.HeaderText = "Employee Phone2"
+        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
+        '
+        'DataGridViewTextBoxColumn13
+        '
+        Me.DataGridViewTextBoxColumn13.DataPropertyName = "empEmail"
+        Me.DataGridViewTextBoxColumn13.HeaderText = "Employee Email"
+        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
+        '
+        'DataGridViewTextBoxColumn14
+        '
+        Me.DataGridViewTextBoxColumn14.DataPropertyName = "empPassword"
+        Me.DataGridViewTextBoxColumn14.HeaderText = "Employee Password"
+        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
+        '
+        'DataGridViewTextBoxColumn15
+        '
+        Me.DataGridViewTextBoxColumn15.DataPropertyName = "empPosition"
+        Me.DataGridViewTextBoxColumn15.HeaderText = "Employee Position"
+        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
+        '
+        'DataGridViewTextBoxColumn16
+        '
+        Me.DataGridViewTextBoxColumn16.DataPropertyName = "empSalary"
+        Me.DataGridViewTextBoxColumn16.HeaderText = "Employee Salary"
+        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
+        '
+        'DataGridViewTextBoxColumn17
+        '
+        Me.DataGridViewTextBoxColumn17.DataPropertyName = "empStatus"
+        Me.DataGridViewTextBoxColumn17.HeaderText = "Employee Status"
+        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
+        '
+        'DataGridViewTextBoxColumn18
+        '
+        Me.DataGridViewTextBoxColumn18.DataPropertyName = "empImageName"
+        Me.DataGridViewTextBoxColumn18.HeaderText = "Employee ImageName"
+        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
+        '
+        'btnLast
+        '
+        Me.btnLast.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLast.Location = New System.Drawing.Point(1148, 315)
+        Me.btnLast.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnLast.Name = "btnLast"
+        Me.btnLast.Size = New System.Drawing.Size(82, 30)
+        Me.btnLast.TabIndex = 94
+        Me.btnLast.Text = "Las&t"
+        Me.btnLast.UseVisualStyleBackColor = True
+        '
+        'btnNext
+        '
+        Me.btnNext.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNext.Location = New System.Drawing.Point(1047, 315)
+        Me.btnNext.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(82, 30)
+        Me.btnNext.TabIndex = 93
+        Me.btnNext.Text = "&Next"
+        Me.btnNext.UseVisualStyleBackColor = True
+        '
+        'btnPrevious
+        '
+        Me.btnPrevious.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrevious.Location = New System.Drawing.Point(957, 314)
+        Me.btnPrevious.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnPrevious.Name = "btnPrevious"
+        Me.btnPrevious.Size = New System.Drawing.Size(82, 30)
+        Me.btnPrevious.TabIndex = 92
+        Me.btnPrevious.Text = "Pr&evious"
+        Me.btnPrevious.UseVisualStyleBackColor = True
+        '
+        'btnFirst
+        '
+        Me.btnFirst.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFirst.Location = New System.Drawing.Point(858, 315)
+        Me.btnFirst.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnFirst.Name = "btnFirst"
+        Me.btnFirst.Size = New System.Drawing.Size(82, 30)
+        Me.btnFirst.TabIndex = 91
+        Me.btnFirst.Text = "&First"
+        Me.btnFirst.UseVisualStyleBackColor = True
+        '
         'frmEmployeeCRUD
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnExit
-        Me.ClientSize = New System.Drawing.Size(741, 667)
+        Me.ClientSize = New System.Drawing.Size(1284, 667)
+        Me.Controls.Add(Me.btnLast)
+        Me.Controls.Add(Me.btnNext)
+        Me.Controls.Add(Me.btnPrevious)
+        Me.Controls.Add(Me.btnFirst)
+        Me.Controls.Add(Me.dgvEmp)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(EmpIdLabel)
         Me.Controls.Add(Me.txtEmpId)
@@ -631,6 +826,7 @@ Partial Class frmEmployeeCRUD
         CType(Me.BurzlyDBDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmployeeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.err, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvEmp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -665,4 +861,27 @@ Partial Class frmEmployeeCRUD
     Friend WithEvents txtEmpImageName As System.Windows.Forms.TextBox
     Friend WithEvents err As System.Windows.Forms.ErrorProvider
     Friend WithEvents btnSearch As System.Windows.Forms.Button
+    Friend WithEvents btnLast As System.Windows.Forms.Button
+    Friend WithEvents btnNext As System.Windows.Forms.Button
+    Friend WithEvents btnPrevious As System.Windows.Forms.Button
+    Friend WithEvents btnFirst As System.Windows.Forms.Button
+    Friend WithEvents dgvEmp As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn11 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn13 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn14 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn15 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn16 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn17 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn18 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
