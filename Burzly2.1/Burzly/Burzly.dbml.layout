@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 12.5" name="Burzly">
+  <DataContextMoniker Name="/BurzlyDataContext" />
+  <nestedChildShapes>
+    <classShape Id="893150a1-24d4-4d46-9198-79fb015a1a8a" absoluteBounds="5.875, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/BurzlyDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9238b34-56a0-42e7-b5a4-7d021aad5c0e" absoluteBounds="5.8900000000000006, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="95b58591-0ffd-4d4b-9895-4e8c21e98af4" absoluteBounds="0.625, 0.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/BurzlyDataContext/Payment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74c4a3aa-37f6-459b-ab55-9e8a0c0c2a84" absoluteBounds="0.64000000000000012, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bc80a929-d210-4a3a-806f-3d1a791425dc" absoluteBounds="4.125, 4.625, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/BurzlyDataContext/Stock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2da14295-273e-41e7-98b5-e3ece84096d7" absoluteBounds="4.14, 5.085, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="04e0101e-c670-40bb-a2ec-48c32790582c" absoluteBounds="1, 3.75, 2, 3.6939111328124987">
+      <DataClassMoniker Name="/BurzlyDataContext/Supplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="102ccea8-70cb-45fd-b4ac-b2bb03542328" absoluteBounds="1.0150000000000001, 4.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3 : 6.03445556640625); (4.125 : 6.03445556640625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BurzlyDataContext/Supplier/Supplier_Stock" />
+      <nodes>
+        <classShapeMoniker Id="04e0101e-c670-40bb-a2ec-48c32790582c" />
+        <classShapeMoniker Id="bc80a929-d210-4a3a-806f-3d1a791425dc" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="fe105a4f-132b-4b93-8596-694fb739b02b" absoluteBounds="3.25, 1.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BurzlyDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d0b813a8-6a0f-4113-8f02-7a68c8a35211" absoluteBounds="3.2649999999999997, 1.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.625 : 2.03929768880208); (3.25 : 2.03929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BurzlyDataContext/Payment/Payment_Order" />
+      <nodes>
+        <classShapeMoniker Id="95b58591-0ffd-4d4b-9895-4e8c21e98af4" />
+        <classShapeMoniker Id="fe105a4f-132b-4b93-8596-694fb739b02b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.25 : 2.03929768880208); (5.875 : 2.03929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BurzlyDataContext/Order/Order_Product" />
+      <nodes>
+        <classShapeMoniker Id="fe105a4f-132b-4b93-8596-694fb739b02b" />
+        <classShapeMoniker Id="893150a1-24d4-4d46-9198-79fb015a1a8a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="9287b237-556d-4261-a8a9-ba4caae180b7" absoluteBounds="7, 4.375, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/BurzlyDataContext/Reservation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7645690e-37a9-4858-8c5e-55acca28ed00" absoluteBounds="7.015, 4.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6842fc0b-683c-4aa0-b47d-5ab7213e7bf7" absoluteBounds="1.625, 8, 2, 4.2708154296875">
+      <DataClassMoniker Name="/BurzlyDataContext/Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d25f0fda-0ec0-4fb3-80c2-5821c7a4bbf7" absoluteBounds="1.6399999999999997, 8.46, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
