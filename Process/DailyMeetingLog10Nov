@@ -1,0 +1,14 @@
+Yesterday Sen Hieng has done the complete UI for the search sotck page that allow user to search stock details from database.
+Today he is starting to write coding for search stock details page.
+Some logical error occur in he coding which is the user enter an invalid stock id, the system will display other stock's information.
+Yesterday Ming Han was do coding and search the internet to learn the grid view to implement in the order page.
+Today he is going to do the coding that retrieve the food details in the database and list in the grid view.
+He face some database connection and database logic are occured make the page could not add the testable data into the system and 
+interrupt the grid view cant show out.
+Yesterday Tau Leong has finished his work but rejected by client because an error occer when click the search button.
+Today he is going to fix the error.
+Yesterday Yin Yin implemented the coding for the grid view but no finish yet.
+Today she continue to implement the code for the gird view part.
+She is considering whether want to separate the staff registration page and search staff page or combine together.
+Wen Shen, Ming Han, Sen Hieng and Tau Leong suggested to combine together because follow the agile modeling value simplicity.
+After the discussion, Yin Yin decided to combine the two pages into one page.
