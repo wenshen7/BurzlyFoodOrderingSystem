@@ -48,7 +48,7 @@ Public Class FrmStockGrid
         Dim i As Integer = e.RowIndex
     End Sub
 
-    Private Sub btnstock_Click(sender As Object, e As EventArgs)
+    Private Sub btnstock_Click(sender As Object, e As EventArgs) Handles btnStock.Click
 
 
     End Sub
@@ -66,7 +66,7 @@ Public Class FrmStockGrid
         SeacrhData()
     End Sub
 
-    Private Sub btnBack_Click(sender As Object, e As EventArgs)
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Close()
 
     End Sub

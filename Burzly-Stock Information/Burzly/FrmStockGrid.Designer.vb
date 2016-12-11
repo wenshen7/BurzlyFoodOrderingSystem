@@ -23,12 +23,24 @@ Partial Class FrmStockGrid
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmStockGrid))
+        Me.btnStock = New System.Windows.Forms.Button()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.lblSearch = New System.Windows.Forms.Label()
         Me.lblCount = New System.Windows.Forms.Label()
         Me.dgvStock = New System.Windows.Forms.DataGridView()
+        Me.btnBack = New System.Windows.Forms.Button()
         CType(Me.dgvStock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'btnStock
+        '
+        Me.btnStock.Font = New System.Drawing.Font("Rockwell Condensed", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStock.Location = New System.Drawing.Point(309, 28)
+        Me.btnStock.Name = "btnStock"
+        Me.btnStock.Size = New System.Drawing.Size(108, 27)
+        Me.btnStock.TabIndex = 2
+        Me.btnStock.Text = "&Add Stock"
+        Me.btnStock.UseVisualStyleBackColor = True
         '
         'txtSearch
         '
@@ -72,11 +84,23 @@ Partial Class FrmStockGrid
         Me.dgvStock.Size = New System.Drawing.Size(1057, 303)
         Me.dgvStock.TabIndex = 5
         '
+        'btnBack
+        '
+        Me.btnBack.Font = New System.Drawing.Font("Rockwell Condensed", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.Location = New System.Drawing.Point(1012, 32)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(75, 32)
+        Me.btnBack.TabIndex = 3
+        Me.btnBack.Text = "&Back"
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
         'FrmStockGrid
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1116, 452)
+        Me.Controls.Add(Me.btnBack)
+        Me.Controls.Add(Me.btnStock)
         Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.lblSearch)
         Me.Controls.Add(Me.lblCount)
@@ -89,8 +113,10 @@ Partial Class FrmStockGrid
         Me.PerformLayout()
 
     End Sub
+    Friend WithEvents btnStock As System.Windows.Forms.Button
     Friend WithEvents txtSearch As System.Windows.Forms.TextBox
     Friend WithEvents lblSearch As System.Windows.Forms.Label
     Friend WithEvents lblCount As System.Windows.Forms.Label
     Friend WithEvents dgvStock As System.Windows.Forms.DataGridView
+    Friend WithEvents btnBack As System.Windows.Forms.Button
 End Class

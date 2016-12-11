@@ -253,14 +253,14 @@ C:\Users\KezinS\Desktop\Burzly\Burzly\obj\Debug\Burzly.vbproj.GenerateResource.C
 C:\Users\KezinS\Desktop\Burzly\Burzly\bin\Debug\Burzly.exe
 C:\Users\KezinS\Desktop\Burzly\Burzly\bin\Debug\Burzly.pdb
 C:\Users\KezinS\Desktop\Burzly\Burzly\bin\Debug\Burzly.xml
-C:\Users\KezinS\Desktop\Burzly-Stock Information\Burzly\bin\Debug\Burzly.exe.config
-C:\Users\KezinS\Desktop\Burzly-Stock Information\Burzly\obj\Debug\Burzly.exe
-C:\Users\KezinS\Desktop\Burzly-Stock Information\Burzly\obj\Debug\Burzly.xml
-C:\Users\KezinS\Desktop\Burzly-Stock Information\Burzly\obj\Debug\Burzly.pdb
-C:\Users\KezinS\Desktop\Burzly-Stock Information\Burzly\bin\Debug\Burzly.exe
-C:\Users\KezinS\Desktop\Burzly-Stock Information\Burzly\bin\Debug\Burzly.pdb
-C:\Users\KezinS\Desktop\Burzly-Stock Information\Burzly\bin\Debug\Burzly.xml
-C:\Users\KezinS\Desktop\Burzly-Stock Information\Burzly\obj\Debug\Burzly.vbprojResolveAssemblyReference.cache
-C:\Users\KezinS\Desktop\Burzly-Stock Information\Burzly\obj\Debug\Burzly.FrmStockGrid.resources
-C:\Users\KezinS\Desktop\Burzly-Stock Information\Burzly\obj\Debug\Burzly.Resources.resources
-C:\Users\KezinS\Desktop\Burzly-Stock Information\Burzly\obj\Debug\Burzly.vbproj.GenerateResource.Cache
+C:\Users\KezinS\Desktop\Agile Ss and code\Burzly-Stock Information\Burzly\bin\Debug\Burzly.exe.config
+C:\Users\KezinS\Desktop\Agile Ss and code\Burzly-Stock Information\Burzly\obj\Debug\Burzly.exe
+C:\Users\KezinS\Desktop\Agile Ss and code\Burzly-Stock Information\Burzly\obj\Debug\Burzly.xml
+C:\Users\KezinS\Desktop\Agile Ss and code\Burzly-Stock Information\Burzly\obj\Debug\Burzly.pdb
+C:\Users\KezinS\Desktop\Agile Ss and code\Burzly-Stock Information\Burzly\bin\Debug\Burzly.exe
+C:\Users\KezinS\Desktop\Agile Ss and code\Burzly-Stock Information\Burzly\bin\Debug\Burzly.pdb
+C:\Users\KezinS\Desktop\Agile Ss and code\Burzly-Stock Information\Burzly\bin\Debug\Burzly.xml
+C:\Users\KezinS\Desktop\Agile Ss and code\Burzly-Stock Information\Burzly\obj\Debug\Burzly.vbprojResolveAssemblyReference.cache
+C:\Users\KezinS\Desktop\Agile Ss and code\Burzly-Stock Information\Burzly\obj\Debug\Burzly.FrmStockGrid.resources
+C:\Users\KezinS\Desktop\Agile Ss and code\Burzly-Stock Information\Burzly\obj\Debug\Burzly.Resources.resources
+C:\Users\KezinS\Desktop\Agile Ss and code\Burzly-Stock Information\Burzly\obj\Debug\Burzly.vbproj.GenerateResource.Cache
