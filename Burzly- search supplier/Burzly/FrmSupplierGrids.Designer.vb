@@ -41,7 +41,7 @@ Partial Class FrmSupplierGrids
         Me.dgvSupplier.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.dgvSupplier.Name = "dgvSupplier"
         Me.dgvSupplier.ReadOnly = True
-        Me.dgvSupplier.Size = New System.Drawing.Size(1527, 562)
+        Me.dgvSupplier.Size = New System.Drawing.Size(1691, 562)
         Me.dgvSupplier.TabIndex = 9
         '
         'lblCount
@@ -79,7 +79,7 @@ Partial Class FrmSupplierGrids
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1598, 717)
+        Me.ClientSize = New System.Drawing.Size(1742, 717)
         Me.Controls.Add(Me.dgvSupplier)
         Me.Controls.Add(Me.lblCount)
         Me.Controls.Add(Me.txtSearch)

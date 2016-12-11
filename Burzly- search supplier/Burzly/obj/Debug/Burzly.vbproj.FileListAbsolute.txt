@@ -260,13 +260,13 @@ C:\Users\leonlai\Desktop\Alige Software Development\Assignment\Assignment\Burzly
 C:\Users\leonlai\Desktop\Alige Software Development\Assignment\Assignment\Burzly- add\Burzly\bin\Debug\Burzly.exe
 C:\Users\leonlai\Desktop\Alige Software Development\Assignment\Assignment\Burzly- add\Burzly\bin\Debug\Burzly.pdb
 C:\Users\leonlai\Desktop\Alige Software Development\Assignment\Assignment\Burzly- add\Burzly\bin\Debug\Burzly.xml
-C:\Users\leonlai\Desktop\Burzly- search supplier\Burzly\bin\Debug\Burzly.exe.config
-C:\Users\leonlai\Desktop\Burzly- search supplier\Burzly\obj\Debug\Burzly.exe
-C:\Users\leonlai\Desktop\Burzly- search supplier\Burzly\obj\Debug\Burzly.xml
-C:\Users\leonlai\Desktop\Burzly- search supplier\Burzly\obj\Debug\Burzly.pdb
-C:\Users\leonlai\Desktop\Burzly- search supplier\Burzly\bin\Debug\Burzly.exe
-C:\Users\leonlai\Desktop\Burzly- search supplier\Burzly\bin\Debug\Burzly.pdb
-C:\Users\leonlai\Desktop\Burzly- search supplier\Burzly\bin\Debug\Burzly.xml
-C:\Users\leonlai\Desktop\Burzly- search supplier\Burzly\obj\Debug\Burzly.vbprojResolveAssemblyReference.cache
-C:\Users\leonlai\Desktop\Burzly- search supplier\Burzly\obj\Debug\Burzly.FrmSupplierGrids.resources
-C:\Users\leonlai\Desktop\Burzly- search supplier\Burzly\obj\Debug\Burzly.vbproj.GenerateResource.Cache
+C:\Users\leonlai\Desktop\Alige Software Development\Assignment\Assignment\Burzly- search supplier\Burzly\bin\Debug\Burzly.exe.config
+C:\Users\leonlai\Desktop\Alige Software Development\Assignment\Assignment\Burzly- search supplier\Burzly\obj\Debug\Burzly.exe
+C:\Users\leonlai\Desktop\Alige Software Development\Assignment\Assignment\Burzly- search supplier\Burzly\obj\Debug\Burzly.xml
+C:\Users\leonlai\Desktop\Alige Software Development\Assignment\Assignment\Burzly- search supplier\Burzly\obj\Debug\Burzly.pdb
+C:\Users\leonlai\Desktop\Alige Software Development\Assignment\Assignment\Burzly- search supplier\Burzly\bin\Debug\Burzly.exe
+C:\Users\leonlai\Desktop\Alige Software Development\Assignment\Assignment\Burzly- search supplier\Burzly\bin\Debug\Burzly.pdb
+C:\Users\leonlai\Desktop\Alige Software Development\Assignment\Assignment\Burzly- search supplier\Burzly\bin\Debug\Burzly.xml
+C:\Users\leonlai\Desktop\Alige Software Development\Assignment\Assignment\Burzly- search supplier\Burzly\obj\Debug\Burzly.vbprojResolveAssemblyReference.cache
+C:\Users\leonlai\Desktop\Alige Software Development\Assignment\Assignment\Burzly- search supplier\Burzly\obj\Debug\Burzly.FrmSupplierGrids.resources
+C:\Users\leonlai\Desktop\Alige Software Development\Assignment\Assignment\Burzly- search supplier\Burzly\obj\Debug\Burzly.vbproj.GenerateResource.Cache

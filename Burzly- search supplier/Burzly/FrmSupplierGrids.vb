@@ -69,7 +69,10 @@ Public Class FrmSupplierGrids
 
     Private Sub SeacrhData()
 
-
+        Dim db As New BurzlyDataContext()
+        Dim rs = From o In db.Suppliers
+                 Where o.supId.Contains(txtSearch.Text) Or o.supName.Contains(txtSearch.Text)
+        dgvSupplier.DataSource = rs
 
     End Sub
 
