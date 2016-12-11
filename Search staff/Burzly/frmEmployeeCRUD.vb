@@ -350,11 +350,193 @@ Public Class frmEmployeeCRUD
     End Sub
 
 
+    Private Sub btnFirst_Click(sender As Object, e As EventArgs) Handles btnFirst.Click
+        setControlReadOnly(True)
+        db = New BurzlyDataContext()
+        Dim first = (From emp In db.Employees
+                Select emp.empId).Min
+
+        Dim firstEmp = (From emp In db.Employees
+                           Where emp.empId = first).ToList()(0)
+
+        txtEmpId.Text = firstEmp.empId
+        txtEmpName.Text = firstEmp.empName
+        mskEmpIC.Text = firstEmp.empIC
+        txtEmpPassp.Text = firstEmp.empPassport
+        EmpDOBDateTimePicker.Text = CStr(firstEmp.empDOB)
+        txtEmpGender.Text = firstEmp.empGender
+        txtEmpAddr.Text = firstEmp.empAddress
+        mskEmpPostcode.Text = CStr(firstEmp.empPostcode)
+        txtCountry.Text = firstEmp.empCountry
+        txtPhone1.Text = firstEmp.empPhone1
+        txtPhone2.Text = firstEmp.empPhone2
+        mskEmail.Text = firstEmp.empEmail
+        txtPassw.Text = firstEmp.empPassword
+        txtEmpPosition.Text = firstEmp.empPosition
+        txtEmpSalary.Text = CStr(firstEmp.empSalary)
+        txtEmpState.Text = firstEmp.empState
+        Try
+            picEmp.Load(Application.StartupPath & "\images\Employee\" & firstEmp.empImageName)
+        Catch ex As Exception
+            picEmp.Load(Application.StartupPath & "\images\Employee\No_Image.jpg")
+        End Try
+    End Sub
+
+    Private Sub btnLast_Click(sender As Object, e As EventArgs) Handles btnLast.Click
+
+        setControlReadOnly(True)
+        db = New BurzlyDataContext()
+        Dim last = (From emp In db.Employees
+                Select emp.empId).Max
+
+        Dim lastEmp = (From emp In db.Employees
+                           Where emp.empId = last).ToList()(0)
+
+        txtEmpId.Text = lastEmp.empId
+        txtEmpName.Text = lastEmp.empName
+        mskEmpIC.Text = lastEmp.empIC
+        txtEmpPassp.Text = lastEmp.empPassport
+        EmpDOBDateTimePicker.Text = CStr(lastEmp.empDOB)
+        txtEmpGender.Text = lastEmp.empGender
+        txtEmpAddr.Text = lastEmp.empAddress
+        mskEmpPostcode.Text = CStr(lastEmp.empPostcode)
+        txtCountry.Text = lastEmp.empCountry
+        txtPhone1.Text = lastEmp.empPhone1
+        txtPhone2.Text = lastEmp.empPhone2
+        mskEmail.Text = lastEmp.empEmail
+        txtPassw.Text = lastEmp.empPassword
+        txtEmpPosition.Text = lastEmp.empPosition
+        txtEmpSalary.Text = CStr(lastEmp.empSalary)
+        txtEmpState.Text = lastEmp.empState
+        txtEmpImageName.Text = lastEmp.empImageName
+        Try
+            picEmp.Load(Application.StartupPath & "\images\Employee\" & lastEmp.empImageName)
+        Catch
+            picEmp.Load(Application.StartupPath & "\images\Employee\No_Image.jpg")
+        End Try
+
+    End Sub
+
+    Private Sub btnPrevious_Click(sender As Object, e As EventArgs) Handles btnPrevious.Click
+        setControlReadOnly(True)
+        Try
 
 
+            btnNext.Enabled = True
+            'Dim currentEmpId As String
+            'currentEmpId = txtEmpId.Text
+            'Dim AlpCurrentId As String = currentEmpId.Substring(0, 1)
+            'Dim NumCurrentId As Integer = currentEmpId.Substring(1, 4)
+            'Dim addedIndex As Integer = NumCurrentId - 1
+            'Dim changedEmpId As String = (AlpCurrentId & addedIndex.ToString("0000"))
+            '    Dim previousEmp
+            '    previousEmp = (From emp In db.Employees
+            '           Where emp.empId = changedEmpId).ToList()(0)
 
+            btnPrevious.Enabled = True
+            Dim currentEmpId As String
+            currentEmpId = txtEmpId.Text
+            Dim AlpCurrentId As String = currentEmpId.Substring(0, 1)
+            Dim NumCurrentId As Integer = CInt(currentEmpId.Substring(1, 4))
+            Dim addedIndex As Integer = NumCurrentId - 1
+            Dim changedEmpId As String = (AlpCurrentId & addedIndex.ToString("0000"))
 
+            Dim previousEmp = (From emp In db.Employees
+                       Where emp.empId = changedEmpId).ToList()(0)
 
+            txtEmpId.Text = previousEmp.empId
+            txtEmpName.Text = previousEmp.empName
+            mskEmpIC.Text = previousEmp.empIC
+            txtEmpPassp.Text = previousEmp.empPassport
+            EmpDOBDateTimePicker.Text = CStr(previousEmp.empDOB)
+            txtEmpGender.Text = previousEmp.empGender
+            txtEmpAddr.Text = previousEmp.empAddress
+            mskEmpPostcode.Text = CStr(previousEmp.empPostcode)
+            txtCountry.Text = previousEmp.empCountry
+            txtPhone1.Text = previousEmp.empPhone1
+            txtPhone2.Text = previousEmp.empPhone2
+            mskEmail.Text = previousEmp.empEmail
+            txtPassw.Text = previousEmp.empPassword
+            txtEmpPosition.Text = previousEmp.empPosition
+            txtEmpSalary.Text = CStr(previousEmp.empSalary)
+            txtEmpState.Text = previousEmp.empState
+            txtEmpImageName.Text = previousEmp.empImageName
+
+            Try
+                picEmp.Load(Application.StartupPath & "\images\Employee\" & txtEmpImageName.Text)
+            Catch
+                picEmp.Load(Application.StartupPath & "\images\Employee\No_Image.jpg")
+            End Try
+
+        Catch ex As Exception
+            MessageBox.Show("Id Not Found", "Invalid Id", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+        setControlReadOnly(True)
+        Try
+            btnPrevious.Enabled = True
+            Dim currentEmpId As String
+            currentEmpId = txtEmpId.Text
+            Dim AlpCurrentId As String = currentEmpId.Substring(0, 1)
+            Dim NumCurrentId As Integer = CInt(currentEmpId.Substring(1, 4))
+            Dim addedIndex As Integer = NumCurrentId + 1
+            Dim changedEmpId As String = (AlpCurrentId & addedIndex.ToString("0000"))
+
+            Dim nextEmp = (From emp In db.Employees
+                       Where emp.empId = changedEmpId).ToList()(0)
+
+            'Do
+
+            '    currentEmpId = txtEmpId.Text
+            '    AlpCurrentId = currentEmpId.Substring(0, 1)
+            '    NumCurrentId = currentEmpId.Substring(1, 4)
+            '    addedIndex = NumCurrentId - 1
+            '    changedEmpId = (AlpCurrentId & addedIndex.ToString("0000"))
+
+            '    nextEmp = (From emp In db.Employees
+            '           Where emp.empId = changedEmpId).ToList()(0)
+            'Loop While (changedEmpId = "")
+
+            txtEmpId.Text = nextEmp.empId
+            txtEmpName.Text = nextEmp.empName
+            mskEmpIC.Text = nextEmp.empIC
+            txtEmpPassp.Text = nextEmp.empPassport
+            EmpDOBDateTimePicker.Text = CStr(nextEmp.empDOB)
+            txtEmpGender.Text = nextEmp.empGender
+            txtEmpAddr.Text = nextEmp.empAddress
+            mskEmpPostcode.Text = CStr(nextEmp.empPostcode)
+            txtCountry.Text = nextEmp.empCountry
+            txtPhone1.Text = nextEmp.empPhone1
+            txtPhone2.Text = nextEmp.empPhone2
+            mskEmail.Text = nextEmp.empEmail
+            txtPassw.Text = nextEmp.empPassword
+            txtEmpPosition.Text = nextEmp.empPosition
+            txtEmpSalary.Text = CStr(nextEmp.empSalary)
+            txtEmpState.Text = nextEmp.empState
+            txtEmpImageName.Text = nextEmp.empImageName
+
+            Try
+                picEmp.Load(Application.StartupPath & "\images\Employee\" & txtEmpImageName.Text)
+            Catch
+                picEmp.Load(Application.StartupPath & "\images\Employee\No_Image.jpg")
+            End Try
+        Catch
+            MessageBox.Show("Id not Found", "Invalid Id", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    Private Sub txtEmpId_TextChanged(sender As Object, e As EventArgs) Handles txtEmpId.TextChanged
+        SeacrhData()
+    End Sub
+
+    Private Sub SeacrhData()
+        Dim db As New BurzlyDataContext()
+        Dim rs = From o In db.Employees
+                 Where o.empId.Contains(txtEmpId.Text) Or o.empId.Contains(txtEmpId.Text)
+        dgvEmp.DataSource = rs
+    End Sub
 
 
     Sub CheckError(id As String, name As String, ic As String, passport As String, gender As String, address As String, postcode As String, country As String, phone1 As String, phone2 As String, email As String, password As String, position As String, salary As String, state As String, status As String)
