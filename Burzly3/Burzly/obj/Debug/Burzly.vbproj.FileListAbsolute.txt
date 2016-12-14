@@ -278,3 +278,7 @@ C:\Users\MHY\Desktop\MH Desk\RSD 2\Agile\Agile Assignment\order list\Burzly3\Bur
 C:\Users\MHY\Desktop\MH Desk\RSD 2\Agile\Agile Assignment\order list\Burzly3\Burzly\bin\Debug\Burzly.exe
 C:\Users\MHY\Desktop\MH Desk\RSD 2\Agile\Agile Assignment\order list\Burzly3\Burzly\bin\Debug\Burzly.pdb
 C:\Users\MHY\Desktop\MH Desk\RSD 2\Agile\Agile Assignment\order list\Burzly3\Burzly\bin\Debug\Burzly.xml
+C:\Users\PS\Desktop\2DEC MH\RSD 2\Agile\Agile Assignment\order list\Burzly3\Burzly\bin\Debug\Burzly.exe.config
+C:\Users\PS\Desktop\2DEC MH\RSD 2\Agile\Agile Assignment\order list\Burzly3\Burzly\obj\Debug\Burzly.exe
+C:\Users\PS\Desktop\2DEC MH\RSD 2\Agile\Agile Assignment\order list\Burzly3\Burzly\obj\Debug\Burzly.xml
+C:\Users\PS\Desktop\2DEC MH\RSD 2\Agile\Agile Assignment\order list\Burzly3\Burzly\obj\Debug\Burzly.pdb

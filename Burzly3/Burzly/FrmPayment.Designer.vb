@@ -169,7 +169,7 @@ Partial Class FrmPayment
         Me.lblTotalPrice.Name = "lblTotalPrice"
         Me.lblTotalPrice.Size = New System.Drawing.Size(109, 20)
         Me.lblTotalPrice.TabIndex = 27
-        Me.lblTotalPrice.Text = "Total Price : "
+        Me.lblTotalPrice.Text = "Total Price >"
         '
         'btnCreadit
         '
@@ -215,7 +215,7 @@ Partial Class FrmPayment
         '
         'lblDisplayPrice
         '
-        Me.lblDisplayPrice.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblDisplayPrice.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.lblDisplayPrice.Font = New System.Drawing.Font("Microsoft Sans Serif", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDisplayPrice.ForeColor = System.Drawing.SystemColors.HotTrack
         Me.lblDisplayPrice.Location = New System.Drawing.Point(233, 24)
