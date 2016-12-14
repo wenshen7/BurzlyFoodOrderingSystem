@@ -539,6 +539,193 @@ Public Class frmEmployeeCRUD
     End Sub
 
 
+    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+        If btnEdit.Text = "&Edit" Then
+            btnEdit.Text = "U&pdate"
+            btnAdd.Enabled = False
+
+            setControlReadOnly(False)
+            EmpDOBDateTimePicker.Enabled = True
+            txtEmpId.Enabled = False
+            btnChangePassword.Visible = True
+            txtPassw.Enabled = False
+
+        Else
+
+
+            If txtEmpName.Text = "" Or IsNumeric(txtEmpName.Text) Then
+                err2.AppendLine("Error name")
+                ctr = If(ctr, txtEmpName)
+            End If
+
+            If Not mskEmpIC.MaskFull Then
+                err2.AppendLine("Error IC")
+                ctr = If(ctr, mskEmpIC)
+            End If
+
+            If IsNumeric(txtEmpGender.Text) Then
+                err2.AppendLine("Error Gender")
+                ctr = If(ctr, txtEmpGender)
+            End If
+
+            If IsNumeric(txtCountry.Text) Then
+                err2.AppendLine("Error Country")
+                ctr = If(ctr, txtCountry)
+            End If
+
+            If IsNumeric(txtPhone1.Text) = False Then
+                err2.AppendLine("Error Phone1")
+                ctr = If(ctr, txtPhone1)
+            End If
+
+            If IsNumeric(txtPhone2.Text) = False Then
+                err2.AppendLine("Error Phone2")
+                ctr = If(ctr, txtPhone2)
+            End If
+
+            If Not mskEmpPostcode.MaskFull Then
+                err2.AppendLine("Please Enter Postal Code")
+                ctr = If(ctr, mskEmpPostcode)
+            End If
+
+            If txtEmpSalary.Text = "" Then
+                err2.AppendLine("Please Enter Salary")
+                ctr = If(ctr, txtEmpSalary)
+            End If
+
+            If txtPassw.Text = "" Then
+                err2.AppendLine("Please Enter Password")
+                ctr = If(ctr, txtPassw)
+            End If
+
+            If IsNumeric(txtEmpPosition.Text) Then
+                err2.AppendLine("Error Position")
+                ctr = If(ctr, txtEmpPosition)
+            End If
+
+            If IsNumeric(txtEmpState.Text) Then
+                err2.AppendLine("Error State")
+                ctr = If(ctr, txtEmpState)
+            End If
+
+            If IsNumeric(txtEmpStatus.Text) Then
+                err2.AppendLine("Error Status")
+                ctr = If(ctr, txtEmpStatus)
+            End If
+
+            If err2.Length > 0 Then
+                MessageBox.Show(err2.ToString(), "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                err2.Clear()
+                ctr.Focus()
+                Return
+            Else
+
+                btnEdit.Text = "&Edit"
+                Dim strFilename As String
+
+                'Add Image
+                Try
+                    Dim strBasepath As String
+                    strFilename = System.IO.Path.GetFileName(openFileDialog1.FileName.ToString())
+                    strBasepath = Application.StartupPath & "\images\employee"
+                    If Directory.Exists(strBasepath) = False Then
+                        Call Directory.CreateDirectory(strBasepath)
+                    End If
+                    'Save Image
+                    Call picEmp.Image.Save(strBasepath & "\" & strFilename, System.Drawing.Imaging.ImageFormat.Jpeg)
+                Catch fileException As Exception
+                End Try
+
+
+                Try
+
+                    'Save other information
+                    Dim updateEmp = (From emp In db.Employees
+                                     Where emp.empId = txtEmpId.Text).ToList()(0)
+
+                    With updateEmp
+
+                        .empIC = mskEmpIC.Text
+                        .empName = txtEmpName.Text
+                        .empPassport = txtEmpPassp.Text
+                        .empDOB = CType(EmpDOBDateTimePicker.Text, Date?)
+                        .empGender = txtEmpGender.Text
+                        .empAddress = txtEmpAddr.Text
+                        .empPostcode = CType(mskEmpPostcode.Text, Integer?)
+                        .empCountry = txtCountry.Text
+                        .empPhone1 = txtPhone1.Text
+                        .empPhone2 = txtPhone2.Text
+                        .empEmail = mskEmail.Text
+                        '.empPassword = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(txtPassw.Text))
+                        .empPosition = txtEmpPosition.Text
+                        .empSalary = CType(txtEmpSalary.Text, Decimal?)
+                        .empState = txtEmpState.Text
+                        .empStatus = txtEmpStatus.Text
+                    End With
+
+                    If updateEmp.empImageName = " " Or updateEmp.empImageName = "No_Image.jpg" Then
+                        updateEmp.empImageName = strFilename
+                    Else
+                        Dim ImgReplace = MessageBox.Show("Do you Really Want to Replace Image?", "Replace Image", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
+                        If ImgReplace = Windows.Forms.DialogResult.Yes Then
+                            updateEmp.empImageName = strFilename
+                        Else
+                            MessageBox.Show("Image not Changed", "Image No Change", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                            updateEmp.empImageName = updateEmp.empImageName
+                        End If
+                    End If
+
+
+                    'CheckError(txtEmpId.Text, txtEmpName.Text, mskEmpIC.Text, txtEmpPassp.Text, txtEmpGender.Text, txtEmpAddr.Text, mskEmpPostcode.Text, txtCountry.Text, txtPhone1.Text, txtPhone2.Text, mskEmail.Text, System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(txtPassw.Text)), txtEmpPosition.Text, txtEmpSalary.Text, txtEmpState.Text, txtEmpStatus.Text)
+                    Dim result As Integer = MessageBox.Show("Confirm save data?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+                    If result = DialogResult.Yes Then
+                        If txtPassw.Enabled = True Then
+                            updateEmp.empPassword = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(txtPassw.Text))
+                        End If
+                        db.SubmitChanges()
+                        openFileDialog1.FileName = ""
+                        err.Clear()
+                        MessageBox.Show("Data Updated", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                        EmployeeBindingSource.EndEdit()
+                        btnAnotherId.Visible = False
+                        setControlReadOnly(True)
+                        btnDelete.Enabled = True
+                        btnEdit.Enabled = True
+                        txtEmpId.Enabled = True
+                        btnAdd.Enabled = True
+                        db = New BurzlyDataContext()
+                        dgvEmp.DataSource = db.Employees
+                        setControlReadOnly(True)
+                        txtEmpId.Enabled = True
+                        btnAdd.Enabled = True
+
+                        btnChangePassword.Visible = False
+                        txtPassw.Enabled = True
+                    Else
+                        openFileDialog1.FileName = ""
+                        btnEdit.Text = "&Update"
+                        MessageBox.Show("Data not update", "Fail", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                    End If
+
+
+                    'Save changes
+                    'db.SubmitChanges()
+                    ' MessageBox.Show("Updated Data", "updated", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                Catch
+                    'MessageBox.Show("NO Data Updated", "Not Updated", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                    'btnEdit.Text = "&Update"
+                    btnAdd.Enabled = True
+
+                End Try
+
+
+            End If
+
+        End If
+        db = New BurzlyDataContext()
+        dgvEmp.DataSource = db.Employees
+    End Sub
+
     Sub CheckError(id As String, name As String, ic As String, passport As String, gender As String, address As String, postcode As String, country As String, phone1 As String, phone2 As String, email As String, password As String, position As String, salary As String, state As String, status As String)
 
         err.Tag = Nothing
