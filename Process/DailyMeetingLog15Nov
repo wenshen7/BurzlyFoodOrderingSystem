@@ -1,1 +1,12 @@
-Create log
+Yesterday Sen Hieng started coding the update stock page but no finish yet.
+Today he is going to finish the coding for update stock into database page.
+He is blocking by query of updating information becasue it have some problems.
+Yesterday Tau Leong was implemented all the function for the Update supplier page and test all the function.
+Today he is going to design the UI for Delete supplier page.
+He face the problem that some of the field does not know need to use what kind of field to design.
+Yesterday Ming Han was design some UI, coding the logic of the calculation part and update the database.
+Today he is going to add some new code to improve the calculation correctly.
+He face some coding errors and calculation method errors make the page could not add the testable data into the system.
+Yesterday Yin Yin implement the change password code.
+Today she is going the enhance the code and after that she will start the delete staff.
+She is blocking by encapsulate the password and save into database.
