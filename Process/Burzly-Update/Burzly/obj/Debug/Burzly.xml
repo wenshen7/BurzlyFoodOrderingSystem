@@ -1,0 +1,159 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Burzly
+</name>
+</assembly>
+<members>
+<member name="T:Burzly.BurzlyDBDataSet.EmployeeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.OrderDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.PaymentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.ProductDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.ReservationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.StockDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.SupplierDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.EmployeeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.OrderRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.PaymentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.ProductRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.ReservationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.StockRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.SupplierRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.EmployeeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.OrderRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.PaymentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.ProductRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.ReservationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.StockRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet.SupplierRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSetTableAdapters.EmployeeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSetTableAdapters.OrderTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSetTableAdapters.PaymentTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSetTableAdapters.ProductTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSetTableAdapters.ReservationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSetTableAdapters.StockTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSetTableAdapters.SupplierTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Burzly.BurzlyDBDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Burzly.BurzlyDBDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Burzly.BurzlyDBDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Burzly.BurzlyDBDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Burzly.BurzlyDBDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Burzly.BurzlyDBDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Burzly.BurzlyDBDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Burzly.BurzlyDBDataSetTableAdapters.TableAdapterManager.UpdateAll(Burzly.BurzlyDBDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Burzly.BurzlyDBDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>
