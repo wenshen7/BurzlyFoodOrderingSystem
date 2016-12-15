@@ -726,6 +726,10 @@ Public Class frmEmployeeCRUD
         dgvEmp.DataSource = db.Employees
     End Sub
 
+    Private Sub btnChangePassword_Click(sender As Object, e As EventArgs) Handles btnChangePassword.Click
+        txtPassw.Enabled = True
+    End Sub
+
     Sub CheckError(id As String, name As String, ic As String, passport As String, gender As String, address As String, postcode As String, country As String, phone1 As String, phone2 As String, email As String, password As String, position As String, salary As String, state As String, status As String)
 
         err.Tag = Nothing
