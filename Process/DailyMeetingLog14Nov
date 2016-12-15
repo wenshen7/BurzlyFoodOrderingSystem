@@ -1,1 +1,11 @@
-DailyMeetingLog14Nov
+Yesterday Sen Hieng has done designing my update stock page.
+Today he is going to start on coding based on the update stock page.
+Problem that blocking him is some query for retrieve database data is not working.
+Yesterday Ming Han was coding the logic of the calculation part and update the database.
+Today he is going to add some new code to improve the calculation correctly.
+He face some coding errors and calculation method error make the page could not add the testable data into the system.
+Yesterday Yin Yin has done the coding for edit staff details but change password is still unavailable yet.
+Today she is going to implement the code for change account password.
+She is blocking by updata the data into database, but the problem has been overcome by using linq.
+Yesterday Tau Leong start to implement the coding for edit supplier but no done yet.
+Today he will continue to implement the code.
