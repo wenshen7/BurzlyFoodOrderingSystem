@@ -97,6 +97,7 @@ Partial Class frmEmployeeCRUD
         Me.btnChangePassword = New System.Windows.Forms.Button()
         Me.btnAnotherId = New System.Windows.Forms.Button()
         Me.btnEdit = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
         EmpIdLabel = New System.Windows.Forms.Label()
         EmpNameLabel = New System.Windows.Forms.Label()
         EmpICLabel = New System.Windows.Forms.Label()
@@ -799,12 +800,24 @@ Partial Class frmEmployeeCRUD
         Me.btnEdit.Text = "&Edit"
         Me.btnEdit.UseVisualStyleBackColor = True
         '
+        'btnDelete
+        '
+        Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelete.Location = New System.Drawing.Point(586, 479)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(112, 30)
+        Me.btnDelete.TabIndex = 98
+        Me.btnDelete.Text = "&Delete"
+        Me.btnDelete.UseVisualStyleBackColor = True
+        '
         'frmEmployeeCRUD
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnExit
         Me.ClientSize = New System.Drawing.Size(1284, 667)
+        Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnChangePassword)
         Me.Controls.Add(Me.btnAnotherId)
         Me.Controls.Add(Me.btnEdit)
@@ -926,4 +939,5 @@ Partial Class frmEmployeeCRUD
     Friend WithEvents btnChangePassword As System.Windows.Forms.Button
     Friend WithEvents btnAnotherId As System.Windows.Forms.Button
     Friend WithEvents btnEdit As System.Windows.Forms.Button
+    Friend WithEvents btnDelete As System.Windows.Forms.Button
 End Class

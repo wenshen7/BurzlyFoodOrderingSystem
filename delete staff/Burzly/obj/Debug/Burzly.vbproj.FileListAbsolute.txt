@@ -230,3 +230,7 @@ D:\download\EditStaff\Burzly\bin\Debug\Burzly.exe.config
 D:\download\EditStaff\Burzly\obj\Debug\Burzly.exe
 D:\download\EditStaff\Burzly\obj\Debug\Burzly.xml
 D:\download\EditStaff\Burzly\obj\Debug\Burzly.pdb
+D:\download\delete staff\Burzly\bin\Debug\Burzly.exe.config
+D:\download\delete staff\Burzly\obj\Debug\Burzly.exe
+D:\download\delete staff\Burzly\obj\Debug\Burzly.xml
+D:\download\delete staff\Burzly\obj\Debug\Burzly.pdb

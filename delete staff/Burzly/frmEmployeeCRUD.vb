@@ -852,4 +852,44 @@ Public Class frmEmployeeCRUD
 
 
 
+    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        Dim deleteResult = MessageBox.Show("Are You Sure to Delete?", "Confirm Message", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
+        If deleteResult = Windows.Forms.DialogResult.Yes Then
+            Try
+                Dim deleteEmp = (From em In db.Employees
+                          Where em.empId = txtEmpId.Text).ToList()(0)
+
+                db.Employees.DeleteOnSubmit(deleteEmp)
+                db.SubmitChanges()
+                MessageBox.Show("Data Deleted", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Me.EmployeeTableAdapter.Fill(Me.BurzlyDBDataSet.Employee)
+                txtEmpId.Clear()
+                txtEmpName.Clear()
+                mskEmpIC.Clear()
+                txtEmpPassp.Clear()
+                txtEmpGender.Clear()
+                txtEmpAddr.Clear()
+                mskEmpPostcode.Clear()
+                txtCountry.Clear()
+                txtPhone1.Clear()
+                txtPhone2.Clear()
+                mskEmail.Clear()
+                txtPassw.Clear()
+                txtEmpPosition.Clear()
+                txtEmpSalary.Clear()
+                txtEmpState.Clear()
+                txtEmpStatus.Clear()
+                txtEmpImageName.Clear()
+                picEmp.Image = Nothing
+            Catch
+                MessageBox.Show("Id Not Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            End Try
+            EmployeeBindingSource.MoveFirst()
+        Else
+            MessageBox.Show("Delete Cancel", "No Data Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+
+        db = New BurzlyDataContext()
+        dgvEmp.DataSource = db.Employees
+    End Sub
 End Class
