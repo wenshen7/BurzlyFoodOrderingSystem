@@ -1,0 +1,15 @@
+Yesterday Ming Han was upgrade the coding of the membership deduct 10% calculation part and update the database.
+Today he is going to add the oreder page with membership label and position it and add some coding to improve the calculation 10% discount.
+He is blocking by some code errors and calculation the discount method caused logic error make the page could not add the testable data 
+into the system.
+Yesterday Sen Hieng done UI design for delete stock information page.
+Today he is going to start the coding for delete stock from database.
+He is blocking by the query for delete stock information page is not working well that the stock was said that deleted but it is still
+inside the database.
+Yesterday Yin Yin done delete staff user interface.
+Today she is going to start implement the delete feature coding part.
+She is blocking by the delete linq query because the query failed to delete the staff data in the database but after find solution on 
+internet, she has overcome the problem.
+Yesterday Tau Leong was design ui your and implement all the function for the delete supplier page.
+Today he will finish up the delete fucntion.
+He faced query errors when he try to delete the supplier.
