@@ -1,0 +1,243 @@
+2016-12-23T12:34:22.8375494Z ##[section]Starting: Get Sources
+2016-12-23T12:34:22.9565469Z Syncing repository: wenshen7/BurzlyFoodOrderingSystem (GitHub)
+2016-12-23T12:34:22.9645477Z Prepending Path environment variable with directory containing 'git.exe'.
+2016-12-23T12:34:22.9745493Z ##[command]git version
+2016-12-23T12:34:23.1165493Z ##[command]git init "C:\a\1\s"
+2016-12-23T12:34:23.1675495Z Initialized empty Git repository in C:/a/1/s/.git/
+2016-12-23T12:34:23.1706537Z ##[command]git remote add origin https://github.com/wenshen7/BurzlyFoodOrderingSystem.git
+2016-12-23T12:34:23.2055494Z ##[command]git config gc.auto 0
+2016-12-23T12:34:23.2385484Z ##[command]git config --get-all http.https://github.com/wenshen7/BurzlyFoodOrderingSystem.git.extraheader
+2016-12-23T12:34:23.2685484Z ##[command]git config --get-all http.proxy
+2016-12-23T12:34:23.3095463Z ##[command]git -c http.extraheader="AUTHORIZATION: basic ********" fetch --tags --prune --progress origin
+2016-12-23T12:34:24.0255184Z remote: Counting objects: 926, done.        
+2016-12-23T12:34:24.0475370Z Receiving objects:   0% (1/926)   
+2016-12-23T12:34:24.0475370Z Receiving objects:   1% (10/926)   
+2016-12-23T12:34:24.0485347Z Receiving objects:   2% (19/926)   
+2016-12-23T12:34:24.0485347Z Receiving objects:   3% (28/926)   
+2016-12-23T12:34:24.0905997Z Receiving objects:   4% (38/926)   
+2016-12-23T12:34:24.0916172Z Receiving objects:   5% (47/926)   
+2016-12-23T12:34:24.0916172Z Receiving objects:   6% (56/926)   
+2016-12-23T12:34:24.0966169Z Receiving objects:   7% (65/926)   
+2016-12-23T12:34:24.1609563Z Receiving objects:   8% (75/926)   
+2016-12-23T12:34:24.3871279Z Receiving objects:   9% (84/926)   
+2016-12-23T12:34:24.5249025Z Receiving objects:  10% (93/926)   
+2016-12-23T12:34:24.5259036Z Receiving objects:  11% (102/926)   
+2016-12-23T12:34:24.5269036Z Receiving objects:  12% (112/926)   
+2016-12-23T12:34:24.5279025Z Receiving objects:  13% (121/926)   
+2016-12-23T12:34:24.5289035Z Receiving objects:  14% (130/926)   
+2016-12-23T12:34:24.5964596Z Receiving objects:  15% (139/926)   
+2016-12-23T12:34:24.6004596Z Receiving objects:  16% (149/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6024601Z Receiving objects:  17% (158/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6074592Z Receiving objects:  18% (167/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6084593Z Receiving objects:  19% (176/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6549766Z Receiving objects:  20% (186/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6559756Z Receiving objects:  21% (195/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6569738Z Receiving objects:  22% (204/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6619755Z Receiving objects:  23% (213/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6619755Z Receiving objects:  24% (223/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6629778Z Receiving objects:  25% (232/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6659723Z Receiving objects:  26% (241/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6689758Z Receiving objects:  27% (251/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6699734Z Receiving objects:  28% (260/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7285270Z Receiving objects:  29% (269/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7295282Z Receiving objects:  30% (278/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7325278Z Receiving objects:  31% (288/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7345278Z Receiving objects:  32% (297/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7379475Z Receiving objects:  33% (306/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7435281Z Receiving objects:  34% (315/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7445287Z Receiving objects:  35% (325/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7475265Z Receiving objects:  36% (334/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7485284Z Receiving objects:  37% (343/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7565262Z Receiving objects:  38% (352/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7575285Z Receiving objects:  39% (362/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7575285Z Receiving objects:  40% (371/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7575285Z Receiving objects:  41% (380/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7585285Z Receiving objects:  42% (389/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7961732Z Receiving objects:  43% (399/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7971738Z Receiving objects:  44% (408/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.8101729Z Receiving objects:  45% (417/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.8742456Z Receiving objects:  46% (426/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.8781758Z Receiving objects:  47% (436/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.8831730Z Receiving objects:  48% (445/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.8841751Z Receiving objects:  49% (454/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.9412068Z Receiving objects:  50% (463/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.9442059Z Receiving objects:  51% (473/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.9472050Z Receiving objects:  52% (482/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.9482058Z Receiving objects:  53% (491/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0056056Z Receiving objects:  54% (501/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0116137Z Receiving objects:  55% (510/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0116137Z Receiving objects:  56% (519/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0136136Z Receiving objects:  57% (528/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0146131Z Receiving objects:  58% (538/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0196131Z Receiving objects:  59% (547/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0216126Z Receiving objects:  60% (556/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0236129Z Receiving objects:  61% (565/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0256129Z Receiving objects:  62% (575/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0276139Z Receiving objects:  63% (584/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0286133Z Receiving objects:  64% (593/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0316134Z Receiving objects:  65% (602/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0356131Z Receiving objects:  66% (612/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0376131Z Receiving objects:  67% (621/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0386133Z Receiving objects:  68% (630/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0426842Z Receiving objects:  69% (639/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0436138Z Receiving objects:  70% (649/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0466131Z Receiving objects:  71% (658/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0466131Z Receiving objects:  72% (667/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0775343Z Receiving objects:  72% (668/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0785355Z Receiving objects:  73% (676/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0785355Z Receiving objects:  74% (686/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0885346Z Receiving objects:  75% (695/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0895348Z Receiving objects:  76% (704/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0925343Z Receiving objects:  77% (714/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0925343Z Receiving objects:  78% (723/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0935350Z Receiving objects:  79% (732/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0945349Z Receiving objects:  80% (741/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0955346Z Receiving objects:  81% (751/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  82% (760/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  83% (769/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  84% (778/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  85% (788/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  86% (797/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  87% (806/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  88% (815/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  89% (825/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1005352Z Receiving objects:  90% (834/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1035344Z Receiving objects:  91% (843/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1035344Z Receiving objects:  92% (852/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1095346Z Receiving objects:  93% (862/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1095346Z Receiving objects:  94% (871/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1095346Z Receiving objects:  95% (880/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1095346Z Receiving objects:  96% (889/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1095346Z Receiving objects:  97% (899/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1095346Z Receiving objects:  98% (908/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1575340Z Receiving objects:  99% (917/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1575340Z remote: Total 926 (delta 0), reused 0 (delta 0), pack-reused 926        
+2016-12-23T12:34:25.1575340Z Receiving objects: 100% (926/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1575340Z Receiving objects: 100% (926/926), 11.18 MiB | 9.25 MiB/s, done.
+2016-12-23T12:34:25.1605348Z Resolving deltas:   0% (0/569)   
+2016-12-23T12:34:25.2315336Z Resolving deltas:  11% (64/569)   
+2016-12-23T12:34:25.3475335Z Resolving deltas:  17% (99/569)   
+2016-12-23T12:34:25.3475335Z Resolving deltas:  19% (113/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  24% (141/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  34% (196/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  41% (234/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  43% (246/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  44% (256/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  45% (260/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  47% (268/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  48% (274/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  49% (282/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  55% (313/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  60% (347/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  61% (349/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  66% (376/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  69% (395/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  70% (402/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  71% (404/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  75% (431/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  76% (438/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  78% (445/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  79% (451/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  82% (469/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  83% (475/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  84% (478/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  85% (484/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  86% (494/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  87% (497/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  88% (505/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  89% (507/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  91% (518/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  92% (525/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  93% (530/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  94% (539/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  95% (542/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  98% (563/569)   
+2016-12-23T12:34:25.5175342Z Resolving deltas:  99% (564/569)   
+2016-12-23T12:34:25.5175342Z Resolving deltas: 100% (569/569)   
+2016-12-23T12:34:25.5175342Z Resolving deltas: 100% (569/569), done.
+2016-12-23T12:34:25.7370297Z From https://github.com/wenshen7/BurzlyFoodOrderingSystem
+2016-12-23T12:34:25.7370297Z  * [new branch]      master     -> origin/master
+2016-12-23T12:34:25.7600301Z ##[command]git checkout --progress --force 084f71e408b9b2a1a717314af30dc6bceec4bb33
+2016-12-23T12:34:27.0679184Z Checking out files:  34% (714/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  35% (734/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  36% (755/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  37% (776/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  38% (797/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  39% (818/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  40% (839/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  41% (860/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  42% (881/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  43% (902/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  44% (923/2096)   
+2016-12-23T12:34:27.0699182Z Checking out files:  45% (944/2096)   
+2016-12-23T12:34:27.0699182Z Checking out files:  46% (965/2096)   
+2016-12-23T12:34:27.0799178Z Checking out files:  47% (986/2096)   
+2016-12-23T12:34:27.0799178Z Checking out files:  48% (1007/2096)   
+2016-12-23T12:34:27.0909177Z Checking out files:  49% (1028/2096)   
+2016-12-23T12:34:27.1009170Z Checking out files:  50% (1048/2096)   
+2016-12-23T12:34:27.1339189Z Checking out files:  51% (1069/2096)   
+2016-12-23T12:34:27.1489337Z Checking out files:  52% (1090/2096)   
+2016-12-23T12:34:27.1639187Z Checking out files:  53% (1111/2096)   
+2016-12-23T12:34:27.1969176Z Checking out files:  54% (1132/2096)   
+2016-12-23T12:34:27.2199224Z Checking out files:  55% (1153/2096)   
+2016-12-23T12:34:27.2329178Z Checking out files:  56% (1174/2096)   
+2016-12-23T12:34:27.2479182Z Checking out files:  57% (1195/2096)   
+2016-12-23T12:34:27.2809178Z Checking out files:  58% (1216/2096)   
+2016-12-23T12:34:27.2959184Z Checking out files:  59% (1237/2096)   
+2016-12-23T12:34:27.3109179Z Checking out files:  60% (1258/2096)   
+2016-12-23T12:34:27.3419312Z Checking out files:  61% (1279/2096)   
+2016-12-23T12:34:27.3629240Z Checking out files:  62% (1300/2096)   
+2016-12-23T12:34:27.3739241Z Checking out files:  63% (1321/2096)   
+2016-12-23T12:34:27.3879214Z Checking out files:  64% (1342/2096)   
+2016-12-23T12:34:27.4239177Z Checking out files:  65% (1363/2096)   
+2016-12-23T12:34:27.4389269Z Checking out files:  66% (1384/2096)   
+2016-12-23T12:34:27.4499318Z Checking out files:  67% (1405/2096)   
+2016-12-23T12:34:27.4649286Z Checking out files:  68% (1426/2096)   
+2016-12-23T12:34:27.4989179Z Checking out files:  69% (1447/2096)   
+2016-12-23T12:34:27.5149192Z Checking out files:  70% (1468/2096)   
+2016-12-23T12:34:27.5279179Z Checking out files:  71% (1489/2096)   
+2016-12-23T12:34:27.5419180Z Checking out files:  72% (1510/2096)   
+2016-12-23T12:34:27.5769178Z Checking out files:  73% (1531/2096)   
+2016-12-23T12:34:27.5899179Z Checking out files:  74% (1552/2096)   
+2016-12-23T12:34:27.6039178Z Checking out files:  75% (1572/2096)   
+2016-12-23T12:34:27.6199178Z Checking out files:  76% (1593/2096)   
+2016-12-23T12:34:27.6589180Z Checking out files:  77% (1614/2096)   
+2016-12-23T12:34:28.2562605Z Checking out files:  78% (1635/2096)   
+2016-12-23T12:34:28.2592615Z Checking out files:  78% (1647/2096)   
+2016-12-23T12:34:28.3825467Z Checking out files:  79% (1656/2096)   
+2016-12-23T12:34:28.4559844Z Checking out files:  80% (1677/2096)   
+2016-12-23T12:34:28.8055517Z Checking out files:  81% (1698/2096)   
+2016-12-23T12:34:28.8191894Z Checking out files:  81% (1699/2096)   
+2016-12-23T12:34:28.8301955Z Checking out files:  82% (1719/2096)   
+2016-12-23T12:34:28.8445082Z Checking out files:  83% (1740/2096)   
+2016-12-23T12:34:28.8795233Z Checking out files:  84% (1761/2096)   
+2016-12-23T12:34:28.8915216Z Checking out files:  85% (1782/2096)   
+2016-12-23T12:34:28.9035225Z Checking out files:  86% (1803/2096)   
+2016-12-23T12:34:28.9425234Z Checking out files:  87% (1824/2096)   
+2016-12-23T12:34:28.9655234Z Checking out files:  88% (1845/2096)   
+2016-12-23T12:34:29.0165223Z Checking out files:  89% (1866/2096)   
+2016-12-23T12:34:29.0355231Z Checking out files:  90% (1887/2096)   
+2016-12-23T12:34:29.0465228Z Checking out files:  91% (1908/2096)   
+2016-12-23T12:34:29.2061941Z Checking out files:  92% (1929/2096)   
+2016-12-23T12:34:29.3462593Z Checking out files:  93% (1950/2096)   
+2016-12-23T12:34:29.4427307Z Checking out files:  94% (1971/2096)   
+2016-12-23T12:34:29.4737367Z Checking out files:  95% (1992/2096)   
+2016-12-23T12:34:29.4927368Z Checking out files:  96% (2013/2096)   
+2016-12-23T12:34:29.5097365Z Checking out files:  97% (2034/2096)   
+2016-12-23T12:34:29.5477366Z Checking out files:  98% (2055/2096)   
+2016-12-23T12:34:29.5647365Z Checking out files:  99% (2076/2096)   
+2016-12-23T12:34:29.5657380Z Checking out files: 100% (2096/2096)   
+2016-12-23T12:34:29.5657380Z Checking out files: 100% (2096/2096), done.
+2016-12-23T12:34:29.5747377Z Note: checking out '084f71e408b9b2a1a717314af30dc6bceec4bb33'.
+2016-12-23T12:34:29.5757358Z 
+2016-12-23T12:34:29.5757358Z You are in 'detached HEAD' state. You can look around, make experimental
+2016-12-23T12:34:29.5757358Z changes and commit them, and you can discard any commits you make in this
+2016-12-23T12:34:29.5757358Z state without impacting any branches by performing another checkout.
+2016-12-23T12:34:29.5757358Z 
+2016-12-23T12:34:29.5757358Z If you want to create a new branch to retain commits you create, you may
+2016-12-23T12:34:29.5757358Z do so (now or later) by using -b with the checkout command again. Example:
+2016-12-23T12:34:29.5757358Z 
+2016-12-23T12:34:29.5757358Z   git checkout -b <new-branch-name>
+2016-12-23T12:34:29.5757358Z 
+2016-12-23T12:34:29.5757358Z HEAD is now at 084f71e... Completed System
+2016-12-23T12:34:29.5867437Z ##[section]Finishing: Get Sources

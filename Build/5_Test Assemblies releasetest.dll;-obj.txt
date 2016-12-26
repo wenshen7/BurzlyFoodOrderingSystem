@@ -1,0 +1,14 @@
+2016-12-23T12:34:53.8661045Z ##[section]Starting: Test Assemblies **\release\*test*.dll;-:**\obj\**
+2016-12-23T12:34:53.8750680Z ==============================================================================
+2016-12-23T12:34:53.8750680Z Task         : Visual Studio Test
+2016-12-23T12:34:53.8750680Z Description  : Run tests with Visual Studio test runner
+2016-12-23T12:34:53.8750680Z Version      : 1.0.83
+2016-12-23T12:34:53.8750680Z Author       : Microsoft Corporation
+2016-12-23T12:34:53.8750680Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=624539)
+2016-12-23T12:34:53.8760687Z ==============================================================================
+2016-12-23T12:34:53.8890687Z Preparing task execution handler.
+2016-12-23T12:34:54.9975628Z Executing the powershell script: C:\a\_tasks\VSTest_ef087383-ee5e-42c7-9a53-ab56c98420f9\1.0.83\VSTest.ps1
+2016-12-23T12:34:55.7665687Z 
+2016-12-23T12:34:55.7665687Z 
+2016-12-23T12:34:55.7785619Z ##[warning]No test assemblies found matching the pattern: '**\release\*test*.dll;-:**\obj\**'.
+2016-12-23T12:34:55.8038861Z ##[section]Finishing: Test Assemblies **\release\*test*.dll;-:**\obj\**

@@ -1,0 +1,64 @@
+2016-12-23T12:34:29.5907392Z ##[section]Starting: NuGet restore **\*.sln
+2016-12-23T12:34:29.6357370Z ==============================================================================
+2016-12-23T12:34:29.6357370Z Task         : NuGet Installer
+2016-12-23T12:34:29.6357370Z Description  : Installs or restores missing NuGet packages
+2016-12-23T12:34:29.6357370Z Version      : 0.2.25
+2016-12-23T12:34:29.6357370Z Author       : Microsoft Corporation
+2016-12-23T12:34:29.6357370Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=613747)
+2016-12-23T12:34:29.6357370Z ==============================================================================
+2016-12-23T12:34:30.4374743Z [command]C:\Windows\system32\chcp.com 65001
+2016-12-23T12:34:30.6095564Z Active code page: 65001
+2016-12-23T12:34:31.0926824Z Detected NuGet version 3.3.0.212 / 3.3.0
+2016-12-23T12:34:31.0995573Z SYSTEMVSSCONNECTION exists true
+2016-12-23T12:34:31.1006423Z To connect to NuGet feeds hosted in your Team Services account/TFS project collection on this build agent, edit your build definition to choose a higher version of nuget or specify a path to a NuGet.config containing the package sources you wish to use.
+2016-12-23T12:34:31.1045573Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly\Burzly.sln
+2016-12-23T12:34:32.2510618Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:32.4473373Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly- Add New Stock\Burzly.sln
+2016-12-23T12:34:32.9543385Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:33.0133379Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly- register supplier\Burzly.sln
+2016-12-23T12:34:33.5323384Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:33.5863369Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly- search supplier\Burzly.sln
+2016-12-23T12:34:34.0873378Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:34.1423366Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly- Update Stock\Burzly.sln
+2016-12-23T12:34:34.6463384Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:34.7013375Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly-delete\Burzly.sln
+2016-12-23T12:34:35.2473390Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:35.3053373Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly-Delete Stock\Burzly.sln
+2016-12-23T12:34:35.8483379Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:35.9063371Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly-Stock Information\Burzly.sln
+2016-12-23T12:34:36.4343386Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:36.4893384Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly-Update\Burzly.sln
+2016-12-23T12:34:36.9935023Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:37.0473369Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly-Update Stock\Burzly.sln
+2016-12-23T12:34:37.5503383Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:37.6053383Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly1\Burzly.sln
+2016-12-23T12:34:38.1003392Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:38.1593386Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly1.1\Burzly.sln
+2016-12-23T12:34:38.6793389Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:38.7403383Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly2\Burzly.sln
+2016-12-23T12:34:39.2583391Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:39.3133384Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly2.1\Burzly.sln
+2016-12-23T12:34:39.8253385Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:39.8793372Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly2.2\Burzly.sln
+2016-12-23T12:34:40.3803388Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:40.4363371Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly3\Burzly.sln
+2016-12-23T12:34:40.9353390Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:40.9913378Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly3.1\Burzly.sln
+2016-12-23T12:34:41.4913382Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:41.5493451Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly4\Burzly.sln
+2016-12-23T12:34:42.0743389Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:42.1443378Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly4.1\Burzly.sln
+2016-12-23T12:34:42.6813392Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:42.7393382Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly4.2\Burzly.sln
+2016-12-23T12:34:43.2783386Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:43.3363387Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\delete staff\Burzly.sln
+2016-12-23T12:34:43.8533390Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:43.9083373Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\EditStaff\Burzly.sln
+2016-12-23T12:34:44.4143389Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:44.4673372Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Process\Burzly-Update\Burzly.sln
+2016-12-23T12:34:44.9733389Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:45.0293384Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Search staff\Burzly.sln
+2016-12-23T12:34:45.5263386Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:45.5813383Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Staff Registration\Burzly\Burzly.sln
+2016-12-23T12:34:46.0833383Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:46.1473377Z ##[section]Finishing: NuGet restore **\*.sln

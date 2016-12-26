@@ -1,0 +1,15 @@
+2016-12-23T12:34:59.2297367Z ##[section]Starting: Copy Files to: $(build.artifactstagingdirectory)
+2016-12-23T12:34:59.2307368Z ==============================================================================
+2016-12-23T12:34:59.2307368Z Task         : Copy Files
+2016-12-23T12:34:59.2307368Z Description  : Copy files from source folder to target folder using minimatch patterns (The minimatch patterns will only match file paths, not folder paths)
+2016-12-23T12:34:59.2307368Z Version      : 1.1.4
+2016-12-23T12:34:59.2307368Z Author       : Microsoft Corporation
+2016-12-23T12:34:59.2307368Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=708389)
+2016-12-23T12:34:59.2307368Z ==============================================================================
+2016-12-23T12:35:00.0547400Z found 5 files
+2016-12-23T12:35:00.0577384Z Copying C:\a\1\s\delete staff\Burzly\bin\Release\Burzly.exe to C:\a\1\a\delete staff\Burzly\bin\Release\Burzly.exe
+2016-12-23T12:35:00.0607376Z Copying C:\a\1\s\delete staff\Burzly\bin\Release\Burzly.exe.config to C:\a\1\a\delete staff\Burzly\bin\Release\Burzly.exe.config
+2016-12-23T12:35:00.0617385Z Copying C:\a\1\s\delete staff\Burzly\bin\Release\Burzly.pdb to C:\a\1\a\delete staff\Burzly\bin\Release\Burzly.pdb
+2016-12-23T12:35:00.0627385Z Copying C:\a\1\s\delete staff\Burzly\bin\Release\Burzly.xml to C:\a\1\a\delete staff\Burzly\bin\Release\Burzly.xml
+2016-12-23T12:35:00.0637374Z Copying C:\a\1\s\delete staff\Burzly\bin\Release\Microsoft.SqlServer.Types.dll to C:\a\1\a\delete staff\Burzly\bin\Release\Microsoft.SqlServer.Types.dll
+2016-12-23T12:35:00.0967381Z ##[section]Finishing: Copy Files to: $(build.artifactstagingdirectory)

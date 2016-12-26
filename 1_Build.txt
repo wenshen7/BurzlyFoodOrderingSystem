@@ -1,0 +1,433 @@
+2016-12-23T12:34:14.5242676Z ##[section]Starting: Build
+2016-12-23T12:34:14.5432685Z Current agent version: '2.110.0'
+2016-12-23T12:34:15.2740279Z Downloading task: NuGetInstaller
+2016-12-23T12:34:18.3897906Z Downloading task: VSBuild
+2016-12-23T12:34:18.7771342Z Downloading task: VSTest
+2016-12-23T12:34:20.3563090Z Downloading task: PublishSymbols
+2016-12-23T12:34:22.0090649Z Downloading task: CopyFiles
+2016-12-23T12:34:22.4324190Z Downloading task: PublishBuildArtifacts
+2016-12-23T12:34:22.8375494Z ##[section]Starting: Get Sources
+2016-12-23T12:34:22.9565469Z Syncing repository: wenshen7/BurzlyFoodOrderingSystem (GitHub)
+2016-12-23T12:34:22.9645477Z Prepending Path environment variable with directory containing 'git.exe'.
+2016-12-23T12:34:22.9745493Z ##[command]git version
+2016-12-23T12:34:23.1165493Z ##[command]git init "C:\a\1\s"
+2016-12-23T12:34:23.1675495Z Initialized empty Git repository in C:/a/1/s/.git/
+2016-12-23T12:34:23.1706537Z ##[command]git remote add origin https://github.com/wenshen7/BurzlyFoodOrderingSystem.git
+2016-12-23T12:34:23.2055494Z ##[command]git config gc.auto 0
+2016-12-23T12:34:23.2385484Z ##[command]git config --get-all http.https://github.com/wenshen7/BurzlyFoodOrderingSystem.git.extraheader
+2016-12-23T12:34:23.2685484Z ##[command]git config --get-all http.proxy
+2016-12-23T12:34:23.3095463Z ##[command]git -c http.extraheader="AUTHORIZATION: basic ********" fetch --tags --prune --progress origin
+2016-12-23T12:34:24.0255184Z remote: Counting objects: 926, done.        
+2016-12-23T12:34:24.0475370Z Receiving objects:   0% (1/926)   
+2016-12-23T12:34:24.0475370Z Receiving objects:   1% (10/926)   
+2016-12-23T12:34:24.0485347Z Receiving objects:   2% (19/926)   
+2016-12-23T12:34:24.0485347Z Receiving objects:   3% (28/926)   
+2016-12-23T12:34:24.0905997Z Receiving objects:   4% (38/926)   
+2016-12-23T12:34:24.0916172Z Receiving objects:   5% (47/926)   
+2016-12-23T12:34:24.0916172Z Receiving objects:   6% (56/926)   
+2016-12-23T12:34:24.0966169Z Receiving objects:   7% (65/926)   
+2016-12-23T12:34:24.1609563Z Receiving objects:   8% (75/926)   
+2016-12-23T12:34:24.3871279Z Receiving objects:   9% (84/926)   
+2016-12-23T12:34:24.5249025Z Receiving objects:  10% (93/926)   
+2016-12-23T12:34:24.5259036Z Receiving objects:  11% (102/926)   
+2016-12-23T12:34:24.5269036Z Receiving objects:  12% (112/926)   
+2016-12-23T12:34:24.5279025Z Receiving objects:  13% (121/926)   
+2016-12-23T12:34:24.5289035Z Receiving objects:  14% (130/926)   
+2016-12-23T12:34:24.5964596Z Receiving objects:  15% (139/926)   
+2016-12-23T12:34:24.6004596Z Receiving objects:  16% (149/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6024601Z Receiving objects:  17% (158/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6074592Z Receiving objects:  18% (167/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6084593Z Receiving objects:  19% (176/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6549766Z Receiving objects:  20% (186/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6559756Z Receiving objects:  21% (195/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6569738Z Receiving objects:  22% (204/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6619755Z Receiving objects:  23% (213/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6619755Z Receiving objects:  24% (223/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6629778Z Receiving objects:  25% (232/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6659723Z Receiving objects:  26% (241/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6689758Z Receiving objects:  27% (251/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.6699734Z Receiving objects:  28% (260/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7285270Z Receiving objects:  29% (269/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7295282Z Receiving objects:  30% (278/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7325278Z Receiving objects:  31% (288/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7345278Z Receiving objects:  32% (297/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7379475Z Receiving objects:  33% (306/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7435281Z Receiving objects:  34% (315/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7445287Z Receiving objects:  35% (325/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7475265Z Receiving objects:  36% (334/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7485284Z Receiving objects:  37% (343/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7565262Z Receiving objects:  38% (352/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7575285Z Receiving objects:  39% (362/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7575285Z Receiving objects:  40% (371/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7575285Z Receiving objects:  41% (380/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7585285Z Receiving objects:  42% (389/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7961732Z Receiving objects:  43% (399/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.7971738Z Receiving objects:  44% (408/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.8101729Z Receiving objects:  45% (417/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.8742456Z Receiving objects:  46% (426/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.8781758Z Receiving objects:  47% (436/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.8831730Z Receiving objects:  48% (445/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.8841751Z Receiving objects:  49% (454/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.9412068Z Receiving objects:  50% (463/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.9442059Z Receiving objects:  51% (473/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.9472050Z Receiving objects:  52% (482/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:24.9482058Z Receiving objects:  53% (491/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0056056Z Receiving objects:  54% (501/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0116137Z Receiving objects:  55% (510/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0116137Z Receiving objects:  56% (519/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0136136Z Receiving objects:  57% (528/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0146131Z Receiving objects:  58% (538/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0196131Z Receiving objects:  59% (547/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0216126Z Receiving objects:  60% (556/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0236129Z Receiving objects:  61% (565/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0256129Z Receiving objects:  62% (575/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0276139Z Receiving objects:  63% (584/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0286133Z Receiving objects:  64% (593/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0316134Z Receiving objects:  65% (602/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0356131Z Receiving objects:  66% (612/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0376131Z Receiving objects:  67% (621/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0386133Z Receiving objects:  68% (630/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0426842Z Receiving objects:  69% (639/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0436138Z Receiving objects:  70% (649/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0466131Z Receiving objects:  71% (658/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0466131Z Receiving objects:  72% (667/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0775343Z Receiving objects:  72% (668/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0785355Z Receiving objects:  73% (676/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0785355Z Receiving objects:  74% (686/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0885346Z Receiving objects:  75% (695/926), 1.41 MiB | 2.62 MiB/s   
+2016-12-23T12:34:25.0895348Z Receiving objects:  76% (704/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0925343Z Receiving objects:  77% (714/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0925343Z Receiving objects:  78% (723/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0935350Z Receiving objects:  79% (732/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0945349Z Receiving objects:  80% (741/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0955346Z Receiving objects:  81% (751/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  82% (760/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  83% (769/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  84% (778/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  85% (788/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  86% (797/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  87% (806/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  88% (815/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.0995351Z Receiving objects:  89% (825/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1005352Z Receiving objects:  90% (834/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1035344Z Receiving objects:  91% (843/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1035344Z Receiving objects:  92% (852/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1095346Z Receiving objects:  93% (862/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1095346Z Receiving objects:  94% (871/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1095346Z Receiving objects:  95% (880/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1095346Z Receiving objects:  96% (889/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1095346Z Receiving objects:  97% (899/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1095346Z Receiving objects:  98% (908/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1575340Z Receiving objects:  99% (917/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1575340Z remote: Total 926 (delta 0), reused 0 (delta 0), pack-reused 926        
+2016-12-23T12:34:25.1575340Z Receiving objects: 100% (926/926), 9.60 MiB | 9.25 MiB/s   
+2016-12-23T12:34:25.1575340Z Receiving objects: 100% (926/926), 11.18 MiB | 9.25 MiB/s, done.
+2016-12-23T12:34:25.1605348Z Resolving deltas:   0% (0/569)   
+2016-12-23T12:34:25.2475352Z Resolving deltas:  11% (64/569)   
+2016-12-23T12:34:25.3475335Z Resolving deltas:  17% (99/569)   
+2016-12-23T12:34:25.3475335Z Resolving deltas:  19% (113/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  24% (141/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  34% (196/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  41% (234/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  43% (246/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  44% (256/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  45% (260/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  47% (268/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  48% (274/569)   
+2016-12-23T12:34:25.4855342Z Resolving deltas:  49% (282/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  55% (313/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  60% (347/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  61% (349/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  66% (376/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  69% (395/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  70% (402/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  71% (404/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  75% (431/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  76% (438/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  78% (445/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  79% (451/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  82% (469/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  83% (475/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  84% (478/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  85% (484/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  86% (494/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  87% (497/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  88% (505/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  89% (507/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  91% (518/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  92% (525/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  93% (530/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  94% (539/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  95% (542/569)   
+2016-12-23T12:34:25.4865342Z Resolving deltas:  98% (563/569)   
+2016-12-23T12:34:25.5175342Z Resolving deltas:  99% (564/569)   
+2016-12-23T12:34:25.5175342Z Resolving deltas: 100% (569/569)   
+2016-12-23T12:34:25.5175342Z Resolving deltas: 100% (569/569), done.
+2016-12-23T12:34:25.7370297Z From https://github.com/wenshen7/BurzlyFoodOrderingSystem
+2016-12-23T12:34:25.7370297Z  * [new branch]      master     -> origin/master
+2016-12-23T12:34:25.7600301Z ##[command]git checkout --progress --force 084f71e408b9b2a1a717314af30dc6bceec4bb33
+2016-12-23T12:34:27.0679184Z Checking out files:  34% (714/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  35% (734/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  36% (755/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  37% (776/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  38% (797/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  39% (818/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  40% (839/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  41% (860/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  42% (881/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  43% (902/2096)   
+2016-12-23T12:34:27.0689183Z Checking out files:  44% (923/2096)   
+2016-12-23T12:34:27.0699182Z Checking out files:  45% (944/2096)   
+2016-12-23T12:34:27.0699182Z Checking out files:  46% (965/2096)   
+2016-12-23T12:34:27.0799178Z Checking out files:  47% (986/2096)   
+2016-12-23T12:34:27.0799178Z Checking out files:  48% (1007/2096)   
+2016-12-23T12:34:27.0909177Z Checking out files:  49% (1028/2096)   
+2016-12-23T12:34:27.1009170Z Checking out files:  50% (1048/2096)   
+2016-12-23T12:34:27.1339189Z Checking out files:  51% (1069/2096)   
+2016-12-23T12:34:27.1489337Z Checking out files:  52% (1090/2096)   
+2016-12-23T12:34:27.1639187Z Checking out files:  53% (1111/2096)   
+2016-12-23T12:34:27.1969176Z Checking out files:  54% (1132/2096)   
+2016-12-23T12:34:27.2199224Z Checking out files:  55% (1153/2096)   
+2016-12-23T12:34:27.2329178Z Checking out files:  56% (1174/2096)   
+2016-12-23T12:34:27.2479182Z Checking out files:  57% (1195/2096)   
+2016-12-23T12:34:27.2809178Z Checking out files:  58% (1216/2096)   
+2016-12-23T12:34:27.2959184Z Checking out files:  59% (1237/2096)   
+2016-12-23T12:34:27.3109179Z Checking out files:  60% (1258/2096)   
+2016-12-23T12:34:27.3419312Z Checking out files:  61% (1279/2096)   
+2016-12-23T12:34:27.3629240Z Checking out files:  62% (1300/2096)   
+2016-12-23T12:34:27.3739241Z Checking out files:  63% (1321/2096)   
+2016-12-23T12:34:27.3879214Z Checking out files:  64% (1342/2096)   
+2016-12-23T12:34:27.4239177Z Checking out files:  65% (1363/2096)   
+2016-12-23T12:34:27.4389269Z Checking out files:  66% (1384/2096)   
+2016-12-23T12:34:27.4499318Z Checking out files:  67% (1405/2096)   
+2016-12-23T12:34:27.4649286Z Checking out files:  68% (1426/2096)   
+2016-12-23T12:34:27.4989179Z Checking out files:  69% (1447/2096)   
+2016-12-23T12:34:27.5149192Z Checking out files:  70% (1468/2096)   
+2016-12-23T12:34:27.5279179Z Checking out files:  71% (1489/2096)   
+2016-12-23T12:34:27.5419180Z Checking out files:  72% (1510/2096)   
+2016-12-23T12:34:27.5769178Z Checking out files:  73% (1531/2096)   
+2016-12-23T12:34:27.5899179Z Checking out files:  74% (1552/2096)   
+2016-12-23T12:34:27.6039178Z Checking out files:  75% (1572/2096)   
+2016-12-23T12:34:27.6199178Z Checking out files:  76% (1593/2096)   
+2016-12-23T12:34:27.6589180Z Checking out files:  77% (1614/2096)   
+2016-12-23T12:34:28.2562605Z Checking out files:  78% (1635/2096)   
+2016-12-23T12:34:28.2592615Z Checking out files:  78% (1647/2096)   
+2016-12-23T12:34:28.3825467Z Checking out files:  79% (1656/2096)   
+2016-12-23T12:34:28.4559844Z Checking out files:  80% (1677/2096)   
+2016-12-23T12:34:28.8055517Z Checking out files:  81% (1698/2096)   
+2016-12-23T12:34:28.8191894Z Checking out files:  81% (1699/2096)   
+2016-12-23T12:34:28.8301955Z Checking out files:  82% (1719/2096)   
+2016-12-23T12:34:28.8445082Z Checking out files:  83% (1740/2096)   
+2016-12-23T12:34:28.8795233Z Checking out files:  84% (1761/2096)   
+2016-12-23T12:34:28.8915216Z Checking out files:  85% (1782/2096)   
+2016-12-23T12:34:28.9035225Z Checking out files:  86% (1803/2096)   
+2016-12-23T12:34:28.9425234Z Checking out files:  87% (1824/2096)   
+2016-12-23T12:34:28.9655234Z Checking out files:  88% (1845/2096)   
+2016-12-23T12:34:29.0165223Z Checking out files:  89% (1866/2096)   
+2016-12-23T12:34:29.0355231Z Checking out files:  90% (1887/2096)   
+2016-12-23T12:34:29.0465228Z Checking out files:  91% (1908/2096)   
+2016-12-23T12:34:29.2061941Z Checking out files:  92% (1929/2096)   
+2016-12-23T12:34:29.3462593Z Checking out files:  93% (1950/2096)   
+2016-12-23T12:34:29.4427307Z Checking out files:  94% (1971/2096)   
+2016-12-23T12:34:29.4737367Z Checking out files:  95% (1992/2096)   
+2016-12-23T12:34:29.4927368Z Checking out files:  96% (2013/2096)   
+2016-12-23T12:34:29.5097365Z Checking out files:  97% (2034/2096)   
+2016-12-23T12:34:29.5477366Z Checking out files:  98% (2055/2096)   
+2016-12-23T12:34:29.5647365Z Checking out files:  99% (2076/2096)   
+2016-12-23T12:34:29.5657380Z Checking out files: 100% (2096/2096)   
+2016-12-23T12:34:29.5657380Z Checking out files: 100% (2096/2096), done.
+2016-12-23T12:34:29.5747377Z Note: checking out '084f71e408b9b2a1a717314af30dc6bceec4bb33'.
+2016-12-23T12:34:29.5757358Z 
+2016-12-23T12:34:29.5757358Z You are in 'detached HEAD' state. You can look around, make experimental
+2016-12-23T12:34:29.5757358Z changes and commit them, and you can discard any commits you make in this
+2016-12-23T12:34:29.5757358Z state without impacting any branches by performing another checkout.
+2016-12-23T12:34:29.5757358Z 
+2016-12-23T12:34:29.5757358Z If you want to create a new branch to retain commits you create, you may
+2016-12-23T12:34:29.5757358Z do so (now or later) by using -b with the checkout command again. Example:
+2016-12-23T12:34:29.5757358Z 
+2016-12-23T12:34:29.5757358Z   git checkout -b <new-branch-name>
+2016-12-23T12:34:29.5757358Z 
+2016-12-23T12:34:29.5757358Z HEAD is now at 084f71e... Completed System
+2016-12-23T12:34:29.5867437Z ##[section]Finishing: Get Sources
+2016-12-23T12:34:29.5907392Z ##[section]Starting: NuGet restore **\*.sln
+2016-12-23T12:34:29.6357370Z ==============================================================================
+2016-12-23T12:34:29.6357370Z Task         : NuGet Installer
+2016-12-23T12:34:29.6357370Z Description  : Installs or restores missing NuGet packages
+2016-12-23T12:34:29.6357370Z Version      : 0.2.25
+2016-12-23T12:34:29.6357370Z Author       : Microsoft Corporation
+2016-12-23T12:34:29.6357370Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=613747)
+2016-12-23T12:34:29.6357370Z ==============================================================================
+2016-12-23T12:34:30.4374743Z [command]C:\Windows\system32\chcp.com 65001
+2016-12-23T12:34:30.6095564Z Active code page: 65001
+2016-12-23T12:34:31.0926824Z Detected NuGet version 3.3.0.212 / 3.3.0
+2016-12-23T12:34:31.0995573Z SYSTEMVSSCONNECTION exists true
+2016-12-23T12:34:31.1006423Z To connect to NuGet feeds hosted in your Team Services account/TFS project collection on this build agent, edit your build definition to choose a higher version of nuget or specify a path to a NuGet.config containing the package sources you wish to use.
+2016-12-23T12:34:31.1045573Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly\Burzly.sln
+2016-12-23T12:34:32.2510618Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:32.4473373Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly- Add New Stock\Burzly.sln
+2016-12-23T12:34:32.9543385Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:33.0133379Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly- register supplier\Burzly.sln
+2016-12-23T12:34:33.5323384Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:33.5863369Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly- search supplier\Burzly.sln
+2016-12-23T12:34:34.0873378Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:34.1423366Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly- Update Stock\Burzly.sln
+2016-12-23T12:34:34.6463384Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:34.7013375Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly-delete\Burzly.sln
+2016-12-23T12:34:35.2473390Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:35.3053373Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly-Delete Stock\Burzly.sln
+2016-12-23T12:34:35.8483379Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:35.9063371Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly-Stock Information\Burzly.sln
+2016-12-23T12:34:36.4343386Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:36.4893384Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly-Update\Burzly.sln
+2016-12-23T12:34:36.9935023Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:37.0473369Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly-Update Stock\Burzly.sln
+2016-12-23T12:34:37.5503383Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:37.6053383Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly1\Burzly.sln
+2016-12-23T12:34:38.1003392Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:38.1593386Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly1.1\Burzly.sln
+2016-12-23T12:34:38.6793389Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:38.7403383Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly2\Burzly.sln
+2016-12-23T12:34:39.2583391Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:39.3133384Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly2.1\Burzly.sln
+2016-12-23T12:34:39.8253385Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:39.8793372Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly2.2\Burzly.sln
+2016-12-23T12:34:40.3803388Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:40.4363371Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly3\Burzly.sln
+2016-12-23T12:34:40.9353390Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:40.9913378Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly3.1\Burzly.sln
+2016-12-23T12:34:41.4913382Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:41.5493451Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly4\Burzly.sln
+2016-12-23T12:34:42.0743389Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:42.1443378Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly4.1\Burzly.sln
+2016-12-23T12:34:42.6813392Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:42.7393382Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Burzly4.2\Burzly.sln
+2016-12-23T12:34:43.2783386Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:43.3363387Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\delete staff\Burzly.sln
+2016-12-23T12:34:43.8533390Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:43.9083373Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\EditStaff\Burzly.sln
+2016-12-23T12:34:44.4143389Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:44.4673372Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Process\Burzly-Update\Burzly.sln
+2016-12-23T12:34:44.9733389Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:45.0293384Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Search staff\Burzly.sln
+2016-12-23T12:34:45.5263386Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:45.5813383Z [command]C:\a\_tasks\NuGetInstaller_333b11bd-d341-40d9-afcf-b32d5ce6f23b\0.2.25\node_modules\nuget-task-common\NuGet\3.3.0\NuGet.exe restore -NonInteractive C:\a\1\s\Staff Registration\Burzly\Burzly.sln
+2016-12-23T12:34:46.0833383Z MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+2016-12-23T12:34:46.1473377Z ##[section]Finishing: NuGet restore **\*.sln
+2016-12-23T12:34:46.1483369Z ##[section]Starting: Build solution delete staff/Burzly.sln
+2016-12-23T12:34:46.1523363Z ==============================================================================
+2016-12-23T12:34:46.1523363Z Task         : Visual Studio Build
+2016-12-23T12:34:46.1523363Z Description  : Build with MSBuild and set the Visual Studio version property
+2016-12-23T12:34:46.1523363Z Version      : 1.0.45
+2016-12-23T12:34:46.1523363Z Author       : Microsoft Corporation
+2016-12-23T12:34:46.1523363Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=613727)
+2016-12-23T12:34:46.1523363Z ==============================================================================
+2016-12-23T12:34:50.3367188Z ##[command]"C:\Program Files (x86)\MSBuild\14.0\bin\msbuild.exe" "C:\a\1\s\delete staff\Burzly.sln" /nologo /nr:false /dl:CentralLogger,"C:\a\_tasks\VSBuild_71a9a2d3-a98a-4caa-96ab-affca411ecda\1.0.45\ps_modules\MSBuildHelpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll";"RootDetailId=4e376044-973b-4dc0-8fe9-b5ec34683509|SolutionDir=C:\a\1\s\delete staff"*ForwardingLogger,"C:\a\_tasks\VSBuild_71a9a2d3-a98a-4caa-96ab-affca411ecda\1.0.45\ps_modules\MSBuildHelpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll"  /p:platform="any cpu" /p:configuration="release" /p:VisualStudioVersion="14.0" /p:_MSDeployUserAgent="VSTS_59095387-7d17-435a-9cbb-006dec97c34c_build_9_25"
+2016-12-23T12:34:50.3887176Z Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+2016-12-23T12:34:50.4167190Z Build started 12/23/2016 12:34:50 PM.
+2016-12-23T12:34:50.4687174Z Project "C:\a\1\s\delete staff\Burzly.sln" on node 1 (default targets).
+2016-12-23T12:34:50.4687174Z ValidateSolutionConfiguration:
+2016-12-23T12:34:50.4687174Z   Building solution configuration "release|any cpu".
+2016-12-23T12:34:50.5637164Z The target "_ConvertPdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" does not exist in the project, and will be ignored.
+2016-12-23T12:34:50.5647176Z The target "_CollectPdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" does not exist in the project, and will be ignored.
+2016-12-23T12:34:50.5647176Z The target "_CollectMdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" does not exist in the project, and will be ignored.
+2016-12-23T12:34:50.5647176Z The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" does not exist in the project, and will be ignored.
+2016-12-23T12:34:50.5737179Z Project "C:\a\1\s\delete staff\Burzly.sln" (1) is building "C:\a\1\s\delete staff\Burzly\Burzly.vbproj" (2) on node 1 (default targets).
+2016-12-23T12:34:50.5737179Z PrepareForBuild:
+2016-12-23T12:34:50.5737179Z   Creating directory "bin\Release\".
+2016-12-23T12:34:50.5747181Z   Creating directory "obj\Release\".
+2016-12-23T12:34:51.1979234Z CoreResGen:
+2016-12-23T12:34:51.1989326Z   "C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6 Tools\resgen.exe" /useSourcePath /r:C:\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.Common\11.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.Common.dll /r:C:\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.WinForms\11.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.WinForms.dll /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.DataSetExtensions.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.Linq.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Deployment.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Web.Services.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.Linq.dll" /compile frmEmployeeCRUD.resx,obj\Release\Burzly.frmEmployeeCRUD.resources "My Project\Resources.resx",obj\Release\Burzly.Resources.resources
+2016-12-23T12:34:51.1996653Z   Processing resource file "frmEmployeeCRUD.resx" into "obj\Release\Burzly.frmEmployeeCRUD.resources".
+2016-12-23T12:34:51.2320900Z   Processing resource file "My Project\Resources.resx" into "obj\Release\Burzly.Resources.resources".
+2016-12-23T12:34:51.2550901Z CoreCompile:
+2016-12-23T12:34:51.2560909Z   C:\Program Files (x86)\MSBuild\14.0\bin\vbc.exe /noconfig /imports:Microsoft.VisualBasic,System,System.Collections,System.Collections.Generic,System.Data,System.Drawing,System.Diagnostics,System.Windows.Forms,System.Linq,System.Xml.Linq,System.Threading.Tasks /optioncompare:Binary /optionexplicit+ /optionstrict:custom /nowarn:42016,41999,42017,42018,42019,42032,42036,42020,42021,42022 /optioninfer+ /nostdlib /platform:anycpu32bitpreferred /rootnamespace:Burzly /sdkpath:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5" /highentropyva+ /doc:obj\Release\Burzly.xml /define:"CONFIG=\"Release\",TRACE=-1,_MyType=\"WindowsForms\",PLATFORM=\"AnyCPU\"" /reference:C:\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.Common\11.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.Common.dll,C:\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.WinForms\11.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.WinForms.dll,"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.DataSetExtensions.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.Linq.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Deployment.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Web.Services.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.Linq.dll" /main:Burzly.My.MyApplication /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\Burzly.exe /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /resource:obj\Release\Burzly.frmEmployeeCRUD.resources /resource:obj\Release\Burzly.Resources.resources /target:winexe /utf8output Burzly.designer.vb BurzlyDBDataSet.Designer.vb BurzlyDBDataSet.vb frmEmployeeCRUD.Designer.vb frmEmployeeCRUD.vb "My Project\AssemblyInfo.vb" "My Project\Application.Designer.vb" "My Project\Resources.Designer.vb" "My Project\Settings.Designer.vb" "C:\Users\buildguest\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.vb"
+2016-12-23T12:34:51.4610923Z   Using shared compilation with compiler from directory: C:\Program Files (x86)\MSBuild\14.0\Bin
+2016-12-23T12:34:53.7890682Z ##[warning]delete staff\Burzly\frmEmployeeCRUD.vb(667,50): Warning BC42104: Variable 'strFilename' is used before it has been assigned a value. A null reference exception could result at runtime.
+2016-12-23T12:34:53.7890682Z C:\a\1\s\delete staff\Burzly\frmEmployeeCRUD.vb(667,50): warning BC42104: Variable 'strFilename' is used before it has been assigned a value. A null reference exception could result at runtime. [C:\a\1\s\delete staff\Burzly\Burzly.vbproj]
+2016-12-23T12:34:53.7890682Z   
+2016-12-23T12:34:53.7890682Z _CopyFilesMarkedCopyLocal:
+2016-12-23T12:34:53.7890682Z   Copying file from "C:\Program Files (x86)\Microsoft SQL Server\110\SDK\Assemblies\Microsoft.SqlServer.Types.dll" to "bin\Release\Microsoft.SqlServer.Types.dll".
+2016-12-23T12:34:53.7890682Z _CopyAppConfigFile:
+2016-12-23T12:34:53.7890682Z   Copying file from "App.config" to "bin\Release\Burzly.exe.config".
+2016-12-23T12:34:53.7890682Z CopyFilesToOutputDirectory:
+2016-12-23T12:34:53.7890682Z   Copying file from "obj\Release\Burzly.exe" to "bin\Release\Burzly.exe".
+2016-12-23T12:34:53.7890682Z   Burzly -> C:\a\1\s\delete staff\Burzly\bin\Release\Burzly.exe
+2016-12-23T12:34:53.7890682Z   Copying file from "obj\Release\Burzly.pdb" to "bin\Release\Burzly.pdb".
+2016-12-23T12:34:53.7890682Z   Copying file from "obj\Release\Burzly.xml" to "bin\Release\Burzly.xml".
+2016-12-23T12:34:53.7990778Z Done Building Project "C:\a\1\s\delete staff\Burzly\Burzly.vbproj" (default targets).
+2016-12-23T12:34:53.8010691Z Done Building Project "C:\a\1\s\delete staff\Burzly.sln" (default targets).
+2016-12-23T12:34:53.8030659Z 
+2016-12-23T12:34:53.8030659Z Build succeeded.
+2016-12-23T12:34:53.8040737Z 
+2016-12-23T12:34:53.8040737Z "C:\a\1\s\delete staff\Burzly.sln" (default target) (1) ->
+2016-12-23T12:34:53.8040737Z "C:\a\1\s\delete staff\Burzly\Burzly.vbproj" (default target) (2) ->
+2016-12-23T12:34:53.8040737Z (CoreCompile target) -> 
+2016-12-23T12:34:53.8040737Z   C:\a\1\s\delete staff\Burzly\frmEmployeeCRUD.vb(667,50): warning BC42104: Variable 'strFilename' is used before it has been assigned a value. A null reference exception could result at runtime. [C:\a\1\s\delete staff\Burzly\Burzly.vbproj]
+2016-12-23T12:34:53.8040737Z 
+2016-12-23T12:34:53.8040737Z     1 Warning(s)
+2016-12-23T12:34:53.8040737Z     0 Error(s)
+2016-12-23T12:34:53.8040737Z 
+2016-12-23T12:34:53.8050676Z Time Elapsed 00:00:03.38
+2016-12-23T12:34:53.8653782Z ##[section]Finishing: Build solution delete staff/Burzly.sln
+2016-12-23T12:34:53.8661045Z ##[section]Starting: Test Assemblies **\release\*test*.dll;-:**\obj\**
+2016-12-23T12:34:53.8750680Z ==============================================================================
+2016-12-23T12:34:53.8750680Z Task         : Visual Studio Test
+2016-12-23T12:34:53.8750680Z Description  : Run tests with Visual Studio test runner
+2016-12-23T12:34:53.8750680Z Version      : 1.0.83
+2016-12-23T12:34:53.8750680Z Author       : Microsoft Corporation
+2016-12-23T12:34:53.8750680Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=624539)
+2016-12-23T12:34:53.8760687Z ==============================================================================
+2016-12-23T12:34:53.8890687Z Preparing task execution handler.
+2016-12-23T12:34:54.9975628Z Executing the powershell script: C:\a\_tasks\VSTest_ef087383-ee5e-42c7-9a53-ab56c98420f9\1.0.83\VSTest.ps1
+2016-12-23T12:34:55.7665687Z 
+2016-12-23T12:34:55.7665687Z 
+2016-12-23T12:34:55.7785619Z ##[warning]No test assemblies found matching the pattern: '**\release\*test*.dll;-:**\obj\**'.
+2016-12-23T12:34:55.8038861Z ##[section]Finishing: Test Assemblies **\release\*test*.dll;-:**\obj\**
+2016-12-23T12:34:55.8038861Z ##[section]Starting: Publish symbols path: 
+2016-12-23T12:34:55.8038861Z ==============================================================================
+2016-12-23T12:34:55.8038861Z Task         : Index Sources & Publish Symbols
+2016-12-23T12:34:55.8038861Z Description  : Index your source code and publish symbols to a file share
+2016-12-23T12:34:55.8038861Z Version      : 1.0.34
+2016-12-23T12:34:55.8038861Z Author       : Microsoft Corporation
+2016-12-23T12:34:55.8038861Z Help         : Index your source code and publish symbols to a file share<br/>[More Information](https://go.microsoft.com/fwlink/?LinkID=613722)
+2016-12-23T12:34:55.8038861Z ==============================================================================
+2016-12-23T12:34:58.7907390Z Found 26 files.
+2016-12-23T12:34:59.1807361Z ##[warning]Unsupported source provider 'GitHub' for source indexing.
+2016-12-23T12:34:59.1957374Z ##[warning]Unable to index sources.
+2016-12-23T12:34:59.2287364Z ##[section]Finishing: Publish symbols path: 
+2016-12-23T12:34:59.2297367Z ##[section]Starting: Copy Files to: $(build.artifactstagingdirectory)
+2016-12-23T12:34:59.2307368Z ==============================================================================
+2016-12-23T12:34:59.2307368Z Task         : Copy Files
+2016-12-23T12:34:59.2307368Z Description  : Copy files from source folder to target folder using minimatch patterns (The minimatch patterns will only match file paths, not folder paths)
+2016-12-23T12:34:59.2307368Z Version      : 1.1.4
+2016-12-23T12:34:59.2307368Z Author       : Microsoft Corporation
+2016-12-23T12:34:59.2307368Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=708389)
+2016-12-23T12:34:59.2307368Z ==============================================================================
+2016-12-23T12:35:00.0547400Z found 5 files
+2016-12-23T12:35:00.0577384Z Copying C:\a\1\s\delete staff\Burzly\bin\Release\Burzly.exe to C:\a\1\a\delete staff\Burzly\bin\Release\Burzly.exe
+2016-12-23T12:35:00.0607376Z Copying C:\a\1\s\delete staff\Burzly\bin\Release\Burzly.exe.config to C:\a\1\a\delete staff\Burzly\bin\Release\Burzly.exe.config
+2016-12-23T12:35:00.0617385Z Copying C:\a\1\s\delete staff\Burzly\bin\Release\Burzly.pdb to C:\a\1\a\delete staff\Burzly\bin\Release\Burzly.pdb
+2016-12-23T12:35:00.0627385Z Copying C:\a\1\s\delete staff\Burzly\bin\Release\Burzly.xml to C:\a\1\a\delete staff\Burzly\bin\Release\Burzly.xml
+2016-12-23T12:35:00.0637374Z Copying C:\a\1\s\delete staff\Burzly\bin\Release\Microsoft.SqlServer.Types.dll to C:\a\1\a\delete staff\Burzly\bin\Release\Microsoft.SqlServer.Types.dll
+2016-12-23T12:35:00.0967381Z ##[section]Finishing: Copy Files to: $(build.artifactstagingdirectory)
+2016-12-23T12:35:00.0967381Z ##[section]Starting: Publish Artifact: drop
+2016-12-23T12:35:00.0997443Z ==============================================================================
+2016-12-23T12:35:00.0997443Z Task         : Publish Build Artifacts
+2016-12-23T12:35:00.0997443Z Description  : Publish Build artifacts to the server or a file share
+2016-12-23T12:35:00.0997443Z Version      : 1.0.39
+2016-12-23T12:35:00.0997443Z Author       : Microsoft Corporation
+2016-12-23T12:35:00.0997443Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=708390)
+2016-12-23T12:35:00.1007453Z ==============================================================================
+2016-12-23T12:35:00.8333918Z ##[section]Async Command Start: Upload Artifact
+2016-12-23T12:35:00.8333918Z Uploading 5 files
+2016-12-23T12:35:01.8341154Z File upload succeed.
+2016-12-23T12:35:01.8341154Z Upload 'C:\a\1\a' to file container: '#/534157/drop'
+2016-12-23T12:35:01.9089945Z Associated artifact 5 with build 25
+2016-12-23T12:35:01.9089945Z ##[section]Async Command End: Upload Artifact
+2016-12-23T12:35:01.9089945Z ##[section]Finishing: Publish Artifact: drop
+2016-12-23T12:35:01.9099950Z ##[section]Starting: Post Job Cleanup
+2016-12-23T12:35:01.9199936Z Cleaning any cached credential from repository: wenshen7/BurzlyFoodOrderingSystem (Git)
+2016-12-23T12:35:01.9269937Z ##[command]git remote set-url origin https://github.com/wenshen7/BurzlyFoodOrderingSystem.git
+2016-12-23T12:35:01.9659974Z ##[command]git remote set-url --push origin https://github.com/wenshen7/BurzlyFoodOrderingSystem.git
+2016-12-23T12:35:01.9973977Z ##[section]Finishing: Post Job Cleanup
+2016-12-23T12:35:01.9973977Z ##[section]Finishing: Build

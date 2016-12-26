@@ -1,0 +1,12 @@
+2016-12-23T12:34:55.8038861Z ##[section]Starting: Publish symbols path: 
+2016-12-23T12:34:55.8038861Z ==============================================================================
+2016-12-23T12:34:55.8038861Z Task         : Index Sources & Publish Symbols
+2016-12-23T12:34:55.8038861Z Description  : Index your source code and publish symbols to a file share
+2016-12-23T12:34:55.8038861Z Version      : 1.0.34
+2016-12-23T12:34:55.8038861Z Author       : Microsoft Corporation
+2016-12-23T12:34:55.8038861Z Help         : Index your source code and publish symbols to a file share<br/>[More Information](https://go.microsoft.com/fwlink/?LinkID=613722)
+2016-12-23T12:34:55.8038861Z ==============================================================================
+2016-12-23T12:34:58.7907390Z Found 26 files.
+2016-12-23T12:34:59.1807361Z ##[warning]Unsupported source provider 'GitHub' for source indexing.
+2016-12-23T12:34:59.1957374Z ##[warning]Unable to index sources.
+2016-12-23T12:34:59.2287364Z ##[section]Finishing: Publish symbols path: 

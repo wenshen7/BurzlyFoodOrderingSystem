@@ -1,0 +1,15 @@
+2016-12-23T12:35:00.0967381Z ##[section]Starting: Publish Artifact: drop
+2016-12-23T12:35:00.0997443Z ==============================================================================
+2016-12-23T12:35:00.0997443Z Task         : Publish Build Artifacts
+2016-12-23T12:35:00.0997443Z Description  : Publish Build artifacts to the server or a file share
+2016-12-23T12:35:00.0997443Z Version      : 1.0.39
+2016-12-23T12:35:00.0997443Z Author       : Microsoft Corporation
+2016-12-23T12:35:00.0997443Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=708390)
+2016-12-23T12:35:00.1007453Z ==============================================================================
+2016-12-23T12:35:00.8333918Z ##[section]Async Command Start: Upload Artifact
+2016-12-23T12:35:00.8333918Z Uploading 5 files
+2016-12-23T12:35:01.8341154Z File upload succeed.
+2016-12-23T12:35:01.8341154Z Upload 'C:\a\1\a' to file container: '#/534157/drop'
+2016-12-23T12:35:01.9089945Z Associated artifact 5 with build 25
+2016-12-23T12:35:01.9089945Z ##[section]Async Command End: Upload Artifact
+2016-12-23T12:35:01.9089945Z ##[section]Finishing: Publish Artifact: drop

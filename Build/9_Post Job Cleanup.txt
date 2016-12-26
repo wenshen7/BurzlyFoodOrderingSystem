@@ -1,0 +1,5 @@
+2016-12-23T12:35:01.9099950Z ##[section]Starting: Post Job Cleanup
+2016-12-23T12:35:01.9199936Z Cleaning any cached credential from repository: wenshen7/BurzlyFoodOrderingSystem (Git)
+2016-12-23T12:35:01.9269937Z ##[command]git remote set-url origin https://github.com/wenshen7/BurzlyFoodOrderingSystem.git
+2016-12-23T12:35:01.9659974Z ##[command]git remote set-url --push origin https://github.com/wenshen7/BurzlyFoodOrderingSystem.git
+2016-12-23T12:35:01.9973977Z ##[section]Finishing: Post Job Cleanup

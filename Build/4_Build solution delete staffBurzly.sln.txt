@@ -1,0 +1,56 @@
+2016-12-23T12:34:46.1483369Z ##[section]Starting: Build solution delete staff/Burzly.sln
+2016-12-23T12:34:46.1523363Z ==============================================================================
+2016-12-23T12:34:46.1523363Z Task         : Visual Studio Build
+2016-12-23T12:34:46.1523363Z Description  : Build with MSBuild and set the Visual Studio version property
+2016-12-23T12:34:46.1523363Z Version      : 1.0.45
+2016-12-23T12:34:46.1523363Z Author       : Microsoft Corporation
+2016-12-23T12:34:46.1523363Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkID=613727)
+2016-12-23T12:34:46.1523363Z ==============================================================================
+2016-12-23T12:34:50.3367188Z ##[command]"C:\Program Files (x86)\MSBuild\14.0\bin\msbuild.exe" "C:\a\1\s\delete staff\Burzly.sln" /nologo /nr:false /dl:CentralLogger,"C:\a\_tasks\VSBuild_71a9a2d3-a98a-4caa-96ab-affca411ecda\1.0.45\ps_modules\MSBuildHelpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll";"RootDetailId=4e376044-973b-4dc0-8fe9-b5ec34683509|SolutionDir=C:\a\1\s\delete staff"*ForwardingLogger,"C:\a\_tasks\VSBuild_71a9a2d3-a98a-4caa-96ab-affca411ecda\1.0.45\ps_modules\MSBuildHelpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll"  /p:platform="any cpu" /p:configuration="release" /p:VisualStudioVersion="14.0" /p:_MSDeployUserAgent="VSTS_59095387-7d17-435a-9cbb-006dec97c34c_build_9_25"
+2016-12-23T12:34:50.3887176Z Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+2016-12-23T12:34:50.4167190Z Build started 12/23/2016 12:34:50 PM.
+2016-12-23T12:34:50.4687174Z Project "C:\a\1\s\delete staff\Burzly.sln" on node 1 (default targets).
+2016-12-23T12:34:50.4687174Z ValidateSolutionConfiguration:
+2016-12-23T12:34:50.4687174Z   Building solution configuration "release|any cpu".
+2016-12-23T12:34:50.5637164Z The target "_ConvertPdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" does not exist in the project, and will be ignored.
+2016-12-23T12:34:50.5647176Z The target "_CollectPdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" does not exist in the project, and will be ignored.
+2016-12-23T12:34:50.5647176Z The target "_CollectMdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" does not exist in the project, and will be ignored.
+2016-12-23T12:34:50.5647176Z The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" does not exist in the project, and will be ignored.
+2016-12-23T12:34:50.5737179Z Project "C:\a\1\s\delete staff\Burzly.sln" (1) is building "C:\a\1\s\delete staff\Burzly\Burzly.vbproj" (2) on node 1 (default targets).
+2016-12-23T12:34:50.5737179Z PrepareForBuild:
+2016-12-23T12:34:50.5737179Z   Creating directory "bin\Release\".
+2016-12-23T12:34:50.5747181Z   Creating directory "obj\Release\".
+2016-12-23T12:34:51.1979234Z CoreResGen:
+2016-12-23T12:34:51.1979234Z   "C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6 Tools\resgen.exe" /useSourcePath /r:C:\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.Common\11.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.Common.dll /r:C:\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.WinForms\11.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.WinForms.dll /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.DataSetExtensions.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.Linq.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Deployment.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Web.Services.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.Linq.dll" /compile frmEmployeeCRUD.resx,obj\Release\Burzly.frmEmployeeCRUD.resources "My Project\Resources.resx",obj\Release\Burzly.Resources.resources
+2016-12-23T12:34:51.1996653Z   Processing resource file "frmEmployeeCRUD.resx" into "obj\Release\Burzly.frmEmployeeCRUD.resources".
+2016-12-23T12:34:51.2320900Z   Processing resource file "My Project\Resources.resx" into "obj\Release\Burzly.Resources.resources".
+2016-12-23T12:34:51.2550901Z CoreCompile:
+2016-12-23T12:34:51.2560909Z   C:\Program Files (x86)\MSBuild\14.0\bin\vbc.exe /noconfig /imports:Microsoft.VisualBasic,System,System.Collections,System.Collections.Generic,System.Data,System.Drawing,System.Diagnostics,System.Windows.Forms,System.Linq,System.Xml.Linq,System.Threading.Tasks /optioncompare:Binary /optionexplicit+ /optionstrict:custom /nowarn:42016,41999,42017,42018,42019,42032,42036,42020,42021,42022 /optioninfer+ /nostdlib /platform:anycpu32bitpreferred /rootnamespace:Burzly /sdkpath:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5" /highentropyva+ /doc:obj\Release\Burzly.xml /define:"CONFIG=\"Release\",TRACE=-1,_MyType=\"WindowsForms\",PLATFORM=\"AnyCPU\"" /reference:C:\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.Common\11.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.Common.dll,C:\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.WinForms\11.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.WinForms.dll,"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.DataSetExtensions.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.Linq.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Deployment.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Web.Services.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.Linq.dll" /main:Burzly.My.MyApplication /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\Burzly.exe /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /resource:obj\Release\Burzly.frmEmployeeCRUD.resources /resource:obj\Release\Burzly.Resources.resources /target:winexe /utf8output Burzly.designer.vb BurzlyDBDataSet.Designer.vb BurzlyDBDataSet.vb frmEmployeeCRUD.Designer.vb frmEmployeeCRUD.vb "My Project\AssemblyInfo.vb" "My Project\Application.Designer.vb" "My Project\Resources.Designer.vb" "My Project\Settings.Designer.vb" "C:\Users\buildguest\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.vb"
+2016-12-23T12:34:51.4610923Z   Using shared compilation with compiler from directory: C:\Program Files (x86)\MSBuild\14.0\Bin
+2016-12-23T12:34:53.7890682Z ##[warning]delete staff\Burzly\frmEmployeeCRUD.vb(667,50): Warning BC42104: Variable 'strFilename' is used before it has been assigned a value. A null reference exception could result at runtime.
+2016-12-23T12:34:53.7890682Z C:\a\1\s\delete staff\Burzly\frmEmployeeCRUD.vb(667,50): warning BC42104: Variable 'strFilename' is used before it has been assigned a value. A null reference exception could result at runtime. [C:\a\1\s\delete staff\Burzly\Burzly.vbproj]
+2016-12-23T12:34:53.7890682Z   
+2016-12-23T12:34:53.7890682Z _CopyFilesMarkedCopyLocal:
+2016-12-23T12:34:53.7890682Z   Copying file from "C:\Program Files (x86)\Microsoft SQL Server\110\SDK\Assemblies\Microsoft.SqlServer.Types.dll" to "bin\Release\Microsoft.SqlServer.Types.dll".
+2016-12-23T12:34:53.7890682Z _CopyAppConfigFile:
+2016-12-23T12:34:53.7890682Z   Copying file from "App.config" to "bin\Release\Burzly.exe.config".
+2016-12-23T12:34:53.7890682Z CopyFilesToOutputDirectory:
+2016-12-23T12:34:53.7890682Z   Copying file from "obj\Release\Burzly.exe" to "bin\Release\Burzly.exe".
+2016-12-23T12:34:53.7890682Z   Burzly -> C:\a\1\s\delete staff\Burzly\bin\Release\Burzly.exe
+2016-12-23T12:34:53.7890682Z   Copying file from "obj\Release\Burzly.pdb" to "bin\Release\Burzly.pdb".
+2016-12-23T12:34:53.7890682Z   Copying file from "obj\Release\Burzly.xml" to "bin\Release\Burzly.xml".
+2016-12-23T12:34:53.7990778Z Done Building Project "C:\a\1\s\delete staff\Burzly\Burzly.vbproj" (default targets).
+2016-12-23T12:34:53.8010691Z Done Building Project "C:\a\1\s\delete staff\Burzly.sln" (default targets).
+2016-12-23T12:34:53.8030659Z 
+2016-12-23T12:34:53.8030659Z Build succeeded.
+2016-12-23T12:34:53.8040737Z 
+2016-12-23T12:34:53.8040737Z "C:\a\1\s\delete staff\Burzly.sln" (default target) (1) ->
+2016-12-23T12:34:53.8040737Z "C:\a\1\s\delete staff\Burzly\Burzly.vbproj" (default target) (2) ->
+2016-12-23T12:34:53.8040737Z (CoreCompile target) -> 
+2016-12-23T12:34:53.8040737Z   C:\a\1\s\delete staff\Burzly\frmEmployeeCRUD.vb(667,50): warning BC42104: Variable 'strFilename' is used before it has been assigned a value. A null reference exception could result at runtime. [C:\a\1\s\delete staff\Burzly\Burzly.vbproj]
+2016-12-23T12:34:53.8040737Z 
+2016-12-23T12:34:53.8040737Z     1 Warning(s)
+2016-12-23T12:34:53.8040737Z     0 Error(s)
+2016-12-23T12:34:53.8040737Z 
+2016-12-23T12:34:53.8050676Z Time Elapsed 00:00:03.38
+2016-12-23T12:34:53.8653782Z ##[section]Finishing: Build solution delete staff/Burzly.sln
