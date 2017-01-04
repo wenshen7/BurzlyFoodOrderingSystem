@@ -558,3 +558,5 @@ Public Class FrmStockAdd
 
     End Sub
 End Class
+                                                                                    
+                                                                                    'agile assignment
